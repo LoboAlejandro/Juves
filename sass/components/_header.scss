@@ -1,0 +1,13 @@
+.header{
+    @extend %flexboxRow;
+    position: fixed;
+
+    &__divImagen{
+
+        .logoHeader{
+            &__img{
+                
+            }
+        }
+    }
+}
