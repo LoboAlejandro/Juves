@@ -1,13 +1,39 @@
 .header{
     @extend %flexboxRow;
-    position: fixed;
+    position: sticky;
+    top: 0;
 
     &__divImagen{
 
         .logoHeader{
-            &__img{
-                
-            }
         }
+    }
+
+    &__navBar{
+
+        &__item{
+            display: inline;
+        }
+
+        &__anchor{
+            font-size: 1.5rem;
+        }
+
+        .subMenu{
+            animation: submenu;
+            animation-timing-function: ease-in-out;
+            animation-duration: 120ms;
+            background-color: #e1b997f1;
+
+        }
+    }
+
+    #check, .bar-btn{
+        display: none;
+    }
+
+    @keyframes submenu{
+        from{height: 0;}
+        to{height: 9rem;}
     }
 }

@@ -7,4 +7,25 @@
   flex-direction: row; }
 
 .header {
-  position: fixed; }
+  position: sticky;
+  top: 0; }
+  .header__navBar__item {
+    display: inline; }
+  .header__navBar__anchor {
+    font-size: 1.5rem; }
+  .header__navBar .subMenu {
+    animation: submenu;
+    animation-timing-function: ease-in-out;
+    animation-duration: 120ms;
+    background-color: #e1b997f1; }
+  .header #check, .header .bar-btn {
+    display: none; }
+
+@keyframes submenu {
+  from {
+    height: 0; }
+  to {
+    height: 9rem; } }
+
+main {
+  margin-top: 4rem; }
