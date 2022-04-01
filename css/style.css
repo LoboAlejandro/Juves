@@ -113,12 +113,6 @@
   .header #check, .header .bar-btn {
     display: none; }
 
-@keyframes submenu {
-  from {
-    height: 0; }
-  to {
-    height: 9rem; } }
-
 .headerDos {
   position: fixed;
   top: 0;
@@ -148,7 +142,7 @@
       border-radius: 9px; }
     .headerDos__navBar__item {
       display: inline;
-      margin-left: 3.5rem; }
+      margin-left: 1rem; }
       .headerDos__navBar__item .anchorContacto {
         border: 2px solid #0199c8;
         padding: 0.2rem 0.6rem;
@@ -163,6 +157,7 @@
     height: 9rem; } }
 
 .mainIndex {
+  padding-top: 0;
   width: 100vw;
   height: 100vh;
   background-image: url(../../img/1.png);
@@ -170,5 +165,6 @@
   background-repeat: no-repeat;
   background-position: center center; }
 
-.main {
-  background-color: #0199c8; }
+main {
+  background-color: #0199c8;
+  padding-top: 8rem; }
