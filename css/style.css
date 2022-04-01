@@ -41,7 +41,7 @@
         cursor: default; }
       .header__divImagen .logoHeader__div {
         position: absolute;
-        margin: 18.5rem 0 0 94rem; }
+        margin: 40vh 0 0 94rem; }
         .header__divImagen .logoHeader__div__img {
           width: 12rem; }
           .header__divImagen .logoHeader__div__img:hover {
@@ -55,35 +55,39 @@
           height: 50vh;
           align-items: flex-start; }
           .header__divImagen .logoHeader__div__contenido .h1 {
-            font-size: 2.6rem;
+            font-size: 3rem;
             font-weight: 300;
             color: #0199c8;
-            line-height: 68px; }
+            line-height: 68px;
+            max-width: 40rem; }
           .header__divImagen .logoHeader__div__contenido .h2 {
-            font-size: 2.6rem;
+            font-size: 3rem;
             font-weight: 700;
             color: #0199c8;
             line-height: 50px; }
           .header__divImagen .logoHeader__div__contenido .p {
             margin-top: 30px;
-            font-size: 1.8rem;
+            font-size: 2.3rem;
             font-weight: 400;
             color: #000;
             max-width: 45rem;
             margin-bottom: 60px; }
           .header__divImagen .logoHeader__div__contenido .btnDonar {
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: 700;
             text-decoration: none;
             border-radius: 10px;
             padding: 0.8rem 2.5rem;
             border: none;
+            max-width: 45rem;
             background-color: #0199c8;
             color: #ffff;
             align-self: center; }
             .header__divImagen .logoHeader__div__contenido .btnDonar:hover {
               cursor: pointer;
               background-color: #72b6ca; }
+            .header__divImagen .logoHeader__div__contenido .btnDonar__a {
+              color: #ffff; }
     .header__divImagen .prueba {
       background-color: transparent;
       position: absolute; }
@@ -91,7 +95,7 @@
     margin-right: 1.5rem; }
     .header__navBar__anchor {
       color: #ffff;
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-weight: 400;
       padding: 0.2rem 0.6rem; }
       .header__navBar__anchor:hover {
@@ -104,7 +108,7 @@
       border-radius: 9px; }
     .header__navBar__item {
       display: inline;
-      margin-left: 1rem; }
+      margin-left: 3rem; }
       .header__navBar__item .anchorContacto {
         border: 2px solid #ffff;
         padding: 0.2rem 0.6rem;
@@ -116,19 +120,19 @@
   position: fixed;
   top: 0;
   width: 100%;
-  height: 7rem;
+  height: 9rem;
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(to bottom, #ffff 65%, transparent); }
   .headerDos__divImagen {
     margin-left: 2.1rem; }
     .headerDos__divImagen .logoHeader__img {
-      width: 12rem; }
+      width: 14rem; }
   .headerDos__navBar {
     margin-right: 1.5rem; }
     .headerDos__navBar__anchor {
       color: #0199c8;
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-weight: 400;
       padding: 0.2rem 0.6rem; }
       .headerDos__navBar__anchor:hover {
@@ -141,7 +145,7 @@
       border-radius: 9px; }
     .headerDos__navBar__item {
       display: inline;
-      margin-left: 1rem; }
+      margin-left: 3rem; }
       .headerDos__navBar__item .anchorContacto {
         border: 2px solid #0199c8;
         padding: 0.2rem 0.6rem;
@@ -167,3 +171,33 @@
 main {
   background-color: #0199c8;
   padding-top: 8rem; }
+
+@media only screen and (max-width: 1650px) {
+  .header, .headerDos {
+    height: 7rem; }
+    .header .logoHeader__img, .headerDos .logoHeader__img {
+      width: 12rem; }
+    .header__navBar__anchor, .headerDos__navBar__anchor {
+      font-size: 1.5rem; }
+    .header__navBar__item, .headerDos__navBar__item {
+      margin-left: 1rem; }
+    .header__divImagen .logoHeader__div__contenido .h1, .headerDos__divImagen .logoHeader__div__contenido .h1 {
+      font-size: 2.6rem; }
+    .header__divImagen .logoHeader__div__contenido .h2, .headerDos__divImagen .logoHeader__div__contenido .h2 {
+      font-size: 2.6rem; }
+    .header__divImagen .logoHeader__div__contenido .p, .headerDos__divImagen .logoHeader__div__contenido .p {
+      font-size: 1.8rem; }
+    .header__divImagen .logoHeader__div__contenido .btnDonar, .headerDos__divImagen .logoHeader__div__contenido .btnDonar {
+      font-size: 2rem; }
+  /* 
+    .headerDos{
+        &__navBar{
+            &__anchor{
+                font-size: 1.5rem;
+            }
+
+            &__item{
+                margin-left: 1rem;
+            }
+        }
+    } */ }

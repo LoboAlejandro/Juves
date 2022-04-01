@@ -33,7 +33,7 @@
 
             &__div{
                 position: absolute;
-                margin: 18.5rem 0 0 94rem;
+                margin: 40vh 0 0 94rem;
                 
                 &__img{
                     width: 12rem;
@@ -54,14 +54,15 @@
                     align-items: flex-start;
 
                     .h1{
-                        font-size: 2.6rem;
+                        font-size: 3rem;
                         font-weight: 300;
                         color: $colorPrincipal;
                         line-height: 68px;
+                        max-width: 40rem;
                     }
 
                     .h2{
-                        font-size: 2.6rem;
+                        font-size: 3rem;
                         font-weight: 700;
                         color: $colorPrincipal;
                         line-height: 50px;
@@ -69,7 +70,7 @@
 
                     .p{
                         margin-top: 30px;
-                        font-size: 1.8rem;
+                        font-size: 2.3rem;
                         font-weight: 400;
                         color: #000;
                         max-width: 45rem;
@@ -77,12 +78,13 @@
                     }
 
                     .btnDonar{
-                        font-size: 2rem;
+                        font-size: 2.5rem;
                         font-weight: 700;
                         text-decoration: none;
                         border-radius: 10px;
                         padding: 0.8rem 2.5rem;
                         border: none;
+                        max-width: 45rem;
                         background-color: $colorPrincipal;
                         color: $colorSecundario;
                         align-self: center;
@@ -90,6 +92,10 @@
                         &:hover{
                             cursor: pointer;
                             background-color: $colorPrincipalClaro;
+                        }
+
+                        &__a{
+                            color: $colorSecundario;
                         }
                     }
                 }
@@ -108,7 +114,7 @@
 
         &__anchor{
             color: $colorSecundario;
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-weight: 400;
             padding: 0.2rem 0.6rem;
 
@@ -127,7 +133,7 @@
         
         &__item{
             display: inline;
-            margin-left: 1rem;
+            margin-left: 3rem;
 
             .anchorContacto{
                 border: 2px solid $colorSecundario;

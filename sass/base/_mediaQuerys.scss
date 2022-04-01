@@ -1,3 +1,57 @@
-@media only screen and (max-width: 1180px){
-    
+@media only screen and (max-width: 1650px){
+    .header, .headerDos{
+        height: 7rem;
+
+        .logoHeader{
+            &__img{
+                width: 12rem;
+            }
+        }
+
+        &__navBar{
+            &__anchor{
+                font-size: 1.5rem;
+            }
+
+            &__item{
+                margin-left: 1rem;
+            }
+        }
+
+        &__divImagen{
+            .logoHeader{
+                &__div{
+                    &__contenido{
+                        .h1{
+                            font-size: 2.6rem;
+                        }
+
+                        .h2{
+                            font-size: 2.6rem;
+                        }
+
+                        .p{
+                            font-size: 1.8rem;
+                        }
+
+                        .btnDonar{
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+/* 
+    .headerDos{
+        &__navBar{
+            &__anchor{
+                font-size: 1.5rem;
+            }
+
+            &__item{
+                margin-left: 1rem;
+            }
+        }
+    } */
 }
