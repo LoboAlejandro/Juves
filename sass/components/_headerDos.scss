@@ -1,0 +1,64 @@
+.headerDos{
+    @extend %flexboxRow;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 7rem;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, $colorSecundario 65%, transparent);
+
+    &__divImagen{
+        margin-left: 2.1rem;
+
+        .logoHeader{
+            &__img{
+                width: 12rem;
+            }
+        }
+    }
+
+    &__navBar{
+        margin-right: 1.5rem;
+
+        &__anchor{
+            color: $colorPrincipal;
+            font-size: 1.5rem;
+            font-weight: 400;
+            padding: 0.2rem 0.6rem;
+
+            &:hover{
+                background-color: $colorSecundarioClaro;
+                border: none;
+                border-radius: 9px;
+            }
+        }
+
+        .linkActive{
+            background-color: $colorSecundarioClaro;
+            border: none;
+            border-radius: 9px;
+        }
+
+        &__item{
+            display: inline;
+            margin-left: 3.5rem;
+
+
+            .anchorContacto{
+                border: 2px solid $colorPrincipal;
+                padding: 0.2rem 0.6rem;
+                border-radius: 9px;
+            }
+        }
+    }
+
+    #check, .bar-btn{
+        display: none;
+    }
+
+    @keyframes submenu{
+        from{height: 0;}
+        to{height: 9rem;}
+    }
+}

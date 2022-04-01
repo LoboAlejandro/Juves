@@ -1,23 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  text-decoration: none; }
 
-.header {
+.header, .headerDos {
   display: flex;
   flex-direction: row; }
 
+.header__divImagen .logoHeader__div__contenido {
+  display: flex;
+  flex-direction: column; }
+
 .header {
-  position: sticky;
-  top: 0; }
-  .header__navBar__item {
-    display: inline; }
-  .header__navBar__anchor {
-    font-size: 1.5rem; }
-  .header__navBar .subMenu {
-    animation: submenu;
-    animation-timing-function: ease-in-out;
-    animation-duration: 120ms;
-    background-color: #e1b997f1; }
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 7rem;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom, #0199c8 65%, transparent); }
+  .header__divImagen {
+    background-color: #ffff;
+    padding-left: 2.1rem;
+    position: relative;
+    min-width: 18.5rem; }
+    .header__divImagen .logoHeader {
+      background-color: white;
+      max-width: 140rem;
+      width: 168vw;
+      min-width: 120rem;
+      height: 170vh;
+      top: -20rem;
+      left: -92rem;
+      border-radius: 50%;
+      position: absolute;
+      z-index: 10; }
+      .header__divImagen .logoHeader:hover {
+        cursor: default; }
+      .header__divImagen .logoHeader__div {
+        position: absolute;
+        margin: 18.5rem 0 0 94rem; }
+        .header__divImagen .logoHeader__div__img {
+          width: 12rem; }
+          .header__divImagen .logoHeader__div__img:hover {
+            cursor: pointer; }
+        .header__divImagen .logoHeader__div__contenido {
+          margin-top: 15vh;
+          min-width: 30vw;
+          width: 40vw;
+          max-width: 50rem;
+          min-height: fit-content;
+          height: 50vh;
+          background-color: grey;
+          align-items: flex-start; }
+          .header__divImagen .logoHeader__div__contenido .h1 {
+            font-size: 2.6rem;
+            font-weight: 300;
+            color: #0199c8;
+            line-height: 68px; }
+          .header__divImagen .logoHeader__div__contenido .h2 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            color: #0199c8;
+            line-height: 50px; }
+          .header__divImagen .logoHeader__div__contenido .p {
+            margin-top: 30px;
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: #000;
+            max-width: 45rem;
+            margin-bottom: 60px; }
+          .header__divImagen .logoHeader__div__contenido .btnDonar {
+            font-size: 2rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 10px;
+            padding: 0.8rem 2.5rem;
+            border: none;
+            background-color: #0199c8;
+            color: #ffff;
+            align-self: center; }
+            .header__divImagen .logoHeader__div__contenido .btnDonar:hover {
+              cursor: pointer;
+              background-color: #72b6ca; }
+    .header__divImagen .prueba {
+      background-color: transparent;
+      position: absolute; }
+  .header__navBar {
+    margin-right: 1.5rem; }
+    .header__navBar__anchor {
+      color: #ffff;
+      font-size: 1.5rem;
+      font-weight: 400;
+      padding: 0.2rem 0.6rem; }
+      .header__navBar__anchor:hover {
+        background-color: #72b6ca;
+        border: none;
+        border-radius: 9px; }
+    .header__navBar .linkActive {
+      background-color: #72b6ca;
+      border: none;
+      border-radius: 9px; }
+    .header__navBar__item {
+      display: inline;
+      margin-left: 1rem; }
+      .header__navBar__item .anchorContacto {
+        border: 2px solid #ffff;
+        padding: 0.2rem 0.6rem;
+        border-radius: 9px; }
   .header #check, .header .bar-btn {
     display: none; }
 
@@ -27,5 +119,56 @@
   to {
     height: 9rem; } }
 
-main {
-  margin-top: 4rem; }
+.headerDos {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 7rem;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom, #ffff 65%, transparent); }
+  .headerDos__divImagen {
+    margin-left: 2.1rem; }
+    .headerDos__divImagen .logoHeader__img {
+      width: 12rem; }
+  .headerDos__navBar {
+    margin-right: 1.5rem; }
+    .headerDos__navBar__anchor {
+      color: #0199c8;
+      font-size: 1.5rem;
+      font-weight: 400;
+      padding: 0.2rem 0.6rem; }
+      .headerDos__navBar__anchor:hover {
+        background-color: #ccdce1;
+        border: none;
+        border-radius: 9px; }
+    .headerDos__navBar .linkActive {
+      background-color: #ccdce1;
+      border: none;
+      border-radius: 9px; }
+    .headerDos__navBar__item {
+      display: inline;
+      margin-left: 3.5rem; }
+      .headerDos__navBar__item .anchorContacto {
+        border: 2px solid #0199c8;
+        padding: 0.2rem 0.6rem;
+        border-radius: 9px; }
+  .headerDos #check, .headerDos .bar-btn {
+    display: none; }
+
+@keyframes submenu {
+  from {
+    height: 0; }
+  to {
+    height: 9rem; } }
+
+.mainIndex {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../img/1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.main {
+  background-color: #0199c8; }
