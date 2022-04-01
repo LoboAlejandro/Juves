@@ -53,7 +53,6 @@
           max-width: 50rem;
           min-height: fit-content;
           height: 50vh;
-          background-color: grey;
           align-items: flex-start; }
           .header__divImagen .logoHeader__div__contenido .h1 {
             font-size: 2.6rem;
