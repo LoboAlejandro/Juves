@@ -33,10 +33,10 @@
 
             &__div{
                 position: absolute;
-                margin: 40vh 0 0 94rem;
+                margin: 18.5rem 0 0 94rem;
                 
                 &__img{
-                    width: 12rem;
+                    width: 14rem;
                     
                     &:hover{
                         cursor: pointer;
@@ -44,7 +44,7 @@
                 }
                 
                 &__contenido{
-                    margin-top: 15vh;
+                    margin-top: 35vh;
                     min-width: 30vw;
                     width: 40vw;
                     max-width: 50rem;
@@ -84,7 +84,6 @@
                         border-radius: 10px;
                         padding: 0.8rem 2.5rem;
                         border: none;
-                        max-width: 45rem;
                         background-color: $colorPrincipal;
                         color: $colorSecundario;
                         align-self: center;
