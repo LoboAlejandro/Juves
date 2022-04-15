@@ -1,0 +1,60 @@
+.main__Proyectos{
+    @extend %flexboxColumn;
+    padding-top:130px;
+    color:$colorSecundario;
+
+    h1{
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 95px;
+        margin-left: 60px;
+    }
+
+    h3 {
+        margin-left: 60px;
+        line-height:54.56px;
+    } 
+
+    p{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+  .imagen__proyecto{
+      display:flex;
+      padding-top :50px;
+  }
+   .Pimagen1{
+    position: relative;
+    left: 60px;
+    width: 740px;
+    height: 550px;
+   }
+   .Pimagen2{
+    position: relative;
+    right: 100px;
+    top: 25px;
+    z-index: -1;
+    width: 718px;
+    height: 514px;
+   }
+   .Pimagen3{
+    position: relative;
+    width: 364.37px;
+    height: 502.2px;
+    left: 60px;
+   }
+
+   .Pimagen4{
+    position: relative;
+    width: 366.71px;
+    height: 538.59px;
+    
+    }
+
+    .Pimagen5{
+        position: relative;
+        width: 777.55px;
+        height: 518.37px;
+    }
