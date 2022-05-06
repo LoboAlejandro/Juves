@@ -1,40 +1,38 @@
-.main__QS{ 
-    @extend %flexboxColumn;
-    background-color: $colorPrincipal;
-    padding-top: 8rem;
-    color:$colorSecundario;
-    
-    img{
-    position: absolute;
-    width: 750px;
-    height: 470px;
-    left: 600px;
-    top: 165px;
-    }
-
-    p{
-        position: absolute;
-        width: 540px;
-        height: 513px;
-        left: 45px;
-        top: 230px;
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 34px;
-        height: 523px;
-    }
-}
-
-.titulo__main{
-    position: absolute;
-    right: 62.34%;
-    bottom: 47%;
-    height: 228px;
-    width: 636px;
-    left: 45px;
-    top: 170px;
-}
-
 .fondo{
     background-color: $colorPrincipal;
+    @extend %flexboxColumn;
+
+    .main__QS{ 
+        @extend %flexboxRow;
+        background-color: $colorPrincipal;
+        padding-top: 1rem;
+        color:$colorSecundario;
+        justify-content: center;
+        
+        img{
+            position: relative;
+            width: 750px;
+            height: 470px;
+        }
+    
+        p{
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 34px;
+        }
+    
+        .titulo__main{
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 82px;
+        }
+
+        &__texto{
+            @extend %flexboxColumn;
+            justify-content: center;
+            align-items: center;
+            padding-left: 2rem;
+        }
+    }
 }
+

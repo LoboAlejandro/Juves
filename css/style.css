@@ -5,11 +5,11 @@
   font-family: "Nunito", sans-serif;
   text-decoration: none; }
 
-.header, .headerDos, .main__Proyectos .divImgDS, .main__info, .main__Filosofia {
+.header, .headerDos, .fondo .main__QS, .main__Proyectos .divImgDS, .mainColabora__divBtn, .main__Contactos .main__info, .main__Contactos .sectionRS__icons {
   display: flex;
   flex-direction: row; }
 
-.header__divImagen .logoHeader__div__contenido, .main__QS, .main__Proyectos, .main__Contactos {
+.header__divImagen .logoHeader__div__contenido, .fondo, .fondo .main__QS__texto, .main__Proyectos, .mainColabora, .mainColabora button, .main__Contactos, .main__Contactos .sectionRS {
   display: flex;
   flex-direction: column; }
 
@@ -163,7 +163,7 @@
   padding-top: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url(../../img/1.png);
+  background-image: url(../img/1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
@@ -172,38 +172,29 @@ main {
   background-color: #0199c8;
   padding-top: 8rem; }
 
-.main__QS {
-  background-color: #0199c8;
-  padding-top: 8rem;
-  color: #ffff; }
-  .main__QS img {
-    position: absolute;
-    width: 750px;
-    height: 470px;
-    left: 600px;
-    top: 165px; }
-  .main__QS p {
-    position: absolute;
-    width: 540px;
-    height: 513px;
-    left: 45px;
-    top: 230px;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 34px;
-    height: 523px; }
-
-.titulo__main {
-  position: absolute;
-  right: 62.34%;
-  bottom: 47%;
-  height: 228px;
-  width: 636px;
-  left: 45px;
-  top: 170px; }
-
 .fondo {
   background-color: #0199c8; }
+  .fondo .main__QS {
+    background-color: #0199c8;
+    padding-top: 1rem;
+    color: #ffff;
+    justify-content: center; }
+    .fondo .main__QS img {
+      position: relative;
+      width: 750px;
+      height: 470px; }
+    .fondo .main__QS p {
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 34px; }
+    .fondo .main__QS .titulo__main {
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 82px; }
+    .fondo .main__QS__texto {
+      justify-content: center;
+      align-items: center;
+      padding-left: 2rem; }
 
 .main__Proyectos {
   padding-top: 130px;
@@ -347,6 +338,44 @@ main {
   left: 440.79px;
   bottom: 180px; }
 
+.mainColabora {
+  background-color: #ffff;
+  align-items: center; }
+  .mainColabora h1 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 82px;
+    color: #0199c8; }
+  .mainColabora h3 {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 34px;
+    color: #0199c8;
+    padding-top: 10px; }
+  .mainColabora__divBtn {
+    padding-top: 3rem; }
+  .mainColabora button {
+    justify-content: center;
+    align-items: center;
+    background-color: #FFBC01;
+    box-shadow: 1px 2px 4px rgba(174, 86, 218, 0.33);
+    border-radius: 44px;
+    height: 234px;
+    width: 375px;
+    border: none;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 34px;
+    color: #ffff;
+    text-align: center;
+    letter-spacing: -0.3px;
+    margin: 0 2rem; }
+  .mainColabora button:hover {
+    cursor: pointer;
+    background-color: #e2a500; }
+
 .main__Contactos {
   display: flex;
   justify-content: center;
@@ -369,34 +398,31 @@ main {
     font-size: 25px;
     line-height: 30px;
     margin-left: 10px; }
-
-.main__info {
-  display: flex;
-  justify-content: flex-start;
-  padding-top: 50px; }
-  .main__info h2 {
-    font-weight: 600;
-    font-size: 50px;
-    line-height: 68px;
-    padding-top: 30px; }
-
-.main__Filosofia {
-  position: fixed;
-  background-color: #0199c8;
-  padding-top: 8rem;
-  color: #ffff; }
-
-.titulo__main {
-  position: absolute;
-  right: 62.34%;
-  bottom: 47%;
-  height: 228px;
-  width: 636px;
-  left: 45px;
-  top: 170px; }
-
-.fondo {
-  background-color: #0199c8; }
+  .main__Contactos .main__info {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 50px; }
+  .main__Contactos .sectionRS {
+    justify-content: center;
+    align-items: center; }
+    .main__Contactos .sectionRS h2 {
+      font-weight: 600;
+      font-size: 50px;
+      line-height: 68px;
+      padding-top: 40px; }
+    .main__Contactos .sectionRS__icons {
+      padding-top: 20px;
+      align-items: center;
+      justify-content: center; }
+      .main__Contactos .sectionRS__icons img {
+        margin: 1rem; }
+      .main__Contactos .sectionRS__icons img:hover {
+        cursor: pointer; }
+      .main__Contactos .sectionRS__icons .faceItem {
+        width: 6rem; }
+      .main__Contactos .sectionRS__icons .igItem {
+        width: 4rem;
+        height: 4rem; }
 
 @media only screen and (max-width: 1650px) {
   .header, .headerDos {
