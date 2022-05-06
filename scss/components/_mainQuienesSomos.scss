@@ -1,9 +1,8 @@
 .main__QS{ 
-    @extend %flexboxRow;
+    @extend %flexboxColumn;
     background-color: $colorPrincipal;
     padding-top: 8rem;
     color:$colorSecundario;
-    
     
     img{
     position: absolute;
@@ -11,11 +10,9 @@
     height: 470px;
     left: 600px;
     top: 165px;
-    
+    }
 
-       }
-
-       p{
+    p{
         position: absolute;
         width: 540px;
         height: 513px;
@@ -25,8 +22,7 @@
         font-size: 20px;
         line-height: 34px;
         height: 523px;
-       
-       }
+    }
 }
 
 .titulo__main{
@@ -37,10 +33,8 @@
     width: 636px;
     left: 45px;
     top: 170px;
-    
-
 }
- 
+
 .fondo{
     background-color: $colorPrincipal;
 }
