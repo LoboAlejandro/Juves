@@ -7,7 +7,8 @@
         background-color: $colorPrincipal;
         padding-top: 1rem;
         color:$colorSecundario;
-        justify-content: center;
+        // justify-content: center;
+        text-align: left;
         
         img{
             position: relative;
@@ -25,6 +26,7 @@
             font-weight: 700;
             font-size: 60px;
             line-height: 82px;
+            align-self: flex-start;
         }
 
         &__texto{

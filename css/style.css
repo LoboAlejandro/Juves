@@ -5,7 +5,7 @@
   font-family: "Nunito", sans-serif;
   text-decoration: none; }
 
-.header, .headerDos, .fondo .main__QS, .main__Proyectos .divImgDS, .mainColabora__divBtn, .main__Contactos .main__info, .main__Contactos .sectionRS__icons {
+.header, .headerDos, .fondo .main__QS, .main__Proyectos .divImgDS, .mainColabora__divBtn, .main__Contactos .main__info, .main__Contactos .sectionRS__icons, .main__Filosofia {
   display: flex;
   flex-direction: row; }
 
@@ -178,7 +178,7 @@ main {
     background-color: #0199c8;
     padding-top: 1rem;
     color: #ffff;
-    justify-content: center; }
+    text-align: left; }
     .fondo .main__QS img {
       position: relative;
       width: 750px;
@@ -190,7 +190,8 @@ main {
     .fondo .main__QS .titulo__main {
       font-weight: 700;
       font-size: 60px;
-      line-height: 82px; }
+      line-height: 82px;
+      align-self: flex-start; }
     .fondo .main__QS__texto {
       justify-content: center;
       align-items: center;
@@ -423,6 +424,12 @@ main {
       .main__Contactos .sectionRS__icons .igItem {
         width: 4rem;
         height: 4rem; }
+
+.main__Filosofia {
+  position: fixed;
+  background-color: #0199c8;
+  padding-top: 8rem;
+  color: #ffff; }
 
 @media only screen and (max-width: 1650px) {
   .header, .headerDos {
