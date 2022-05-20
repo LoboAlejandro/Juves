@@ -19,26 +19,46 @@
                     &__img{
                         width: 12rem;
                     }
-                    &__contenido{
-                        margin-top: 15vh;
-                        .h1{
-                            font-size: 2.6rem;
-                        }
+                    // &__contenido{
+                    //     margin-top: 15vh;
+                    //     .h1{
+                    //         font-size: 2.6rem;
+                    //     }
 
-                        .h2{
-                            font-size: 2.6rem;
-                        }
+                    //     .h2{
+                    //         font-size: 2.6rem;
+                    //     }
 
-                        .p{
-                            font-size: 1.8rem;
-                        }
+                    //     .p{
+                    //         font-size: 1.8rem;
+                    //     }
 
-                        .btnDonar{
-                            font-size: 2rem;
-                        }
-                    }
+                    //     .btnDonar{
+                    //         font-size: 2rem;
+                    //     }
+                    // }
                 }
             }
+        }
+    }
+
+    .divPrueba{
+        // margin-top: 15vh;
+        .h1{
+            font-size: 2.6rem;
+        }
+
+        .h2{
+            font-size: 2.6rem;
+        }
+
+        .p{
+            font-size: 1.8rem;
+        }
+
+        .btnDonar{
+            font-size: 2rem;
+            margin-right: 20%;
         }
     }
 }
@@ -62,31 +82,58 @@
                     &__img{
                         width: 10rem;
                     }
-                    &__contenido{
-                        margin-top: 10vh;
-                        .h1{
-                            font-size: 2.2rem;
-                            line-height: 40px;
-                        }
+                    // &__contenido{
+                    //     margin-top: 10vh;
+                    //     .h1{
+                    //         font-size: 2.1rem;
+                    //         line-height: 40px;
+                    //     }
 
-                        .h2{
-                            font-size: 2.2rem;
-                            line-height: 40px;
-                        }
+                    //     .h2{
+                    //         font-size: 2.1rem;
+                    //         line-height: 40px;
+                    //     }
 
-                        .p{
-                            margin-top: 15px;
-                            font-size: 1.4rem;
-                            margin-bottom: 30px;
-                        }
+                    //     .p{
+                    //         margin-top: 15px;
+                    //         font-size: 1.4rem;
+                    //         margin-bottom: 30px;
+                    //         max-width: 25rem;
+                    //     }
 
-                        .btnDonar{
-                            font-size: 1.6rem;
-                            align-self: flex-start;
-                        }
-                    }
+                    //     .btnDonar{
+                    //         font-size: 1.6rem;
+                    //         align-self: flex-start;
+                    //     }
+                    // }
                 }
             }
+        }
+    }
+
+    .divPrueba{
+        // margin-top: 10vh;
+        .h1{
+            font-size: 2.1rem;
+            line-height: 40px;
+        }
+
+        .h2{
+            font-size: 2.1rem;
+            line-height: 40px;
+        }
+
+        .p{
+            margin-top: 15px;
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            max-width: 25rem;
+        }
+
+        .btnDonar{
+            font-size: 1.6rem;
+            // align-self: flex-start;
+            // margin-right: 50%;
         }
     }
 }
@@ -123,31 +170,51 @@
                     &__img{
                         width: 7rem;
                     }
-                    &__contenido{
-                        margin-top: 10vh;
-                        .h1{
-                            font-size: 2.2rem;
-                            line-height: 40px;
-                        }
+                    // &__contenido{
+                    //     margin-top: 10vh;
+                    //     .h1{
+                    //         line-height: 40px;
+                    //     }
 
-                        .h2{
-                            font-size: 2.2rem;
-                            line-height: 40px;
-                        }
+                    //     .h2{
+                    //         line-height: 40px;
+                    //     }
 
-                        .p{
-                            margin-top: 15px;
-                            font-size: 1.4rem;
-                            margin-bottom: 30px;
-                        }
+                    //     .p{
+                    //         margin-top: 15px;
+                    //         font-size: 1.4rem;
+                    //         margin-bottom: 30px;
+                    //     }
 
-                        .btnDonar{
-                            font-size: 1.6rem;
-                            align-self: flex-start;
-                        }
-                    }
+                    //     .btnDonar{
+                    //         font-size: 1.6rem;
+                    //         align-self: flex-start;
+                    //     }
+                    // }
                 }
             }
+        }
+    }
+
+    .divPrueba{
+        margin-top: 10vh;
+        .h1{
+            line-height: 40px;
+        }
+
+        .h2{
+            line-height: 40px;
+        }
+
+        .p{
+            margin-top: 15px;
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+        }
+
+        .btnDonar{
+            font-size: 1.6rem;
+            align-self: flex-start;
         }
     }
 }
@@ -162,29 +229,51 @@
                 &__div{
                     margin: 19rem 0 0 101rem;
 
-                    &__contenido{
-                        .h1{
-                            font-size: 1.8rem;
-                            line-height: 33px;
-                        }
+                    // &__contenido{
+                    //     .h1{
+                    //         font-size: 1.8rem;
+                    //         line-height: 33px;
+                    //     }
 
-                        .h2{
-                            font-size: 1.8rem;
-                            line-height: 33px;
-                        }
+                    //     .h2{
+                    //         font-size: 1.8rem;
+                    //         line-height: 33px;
+                    //     }
 
-                        .p{
-                            margin-top: 10px;
-                            font-size: 1rem;
-                            margin-bottom: 20px;
-                        }
+                    //     .p{
+                    //         margin-top: 10px;
+                    //         font-size: 1rem;
+                    //         margin-bottom: 20px;
+                    //     }
 
-                        .btnDonar{
-                            font-size: 1.2rem;
-                        }
-                    }
+                    //     .btnDonar{
+                    //         font-size: 1.2rem;
+                    //     }
+                    // }
                 }
             }
+        }
+    }
+
+    .divPrueba{
+        .h1{
+            font-size: 1.8rem;
+            line-height: 33px;
+        }
+
+        .h2{
+            font-size: 1.8rem;
+            line-height: 33px;
+        }
+
+        .p{
+            margin-top: 10px;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .btnDonar{
+            font-size: 1.2rem;
         }
     }
 }

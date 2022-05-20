@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: row; }
 
-.header__divImagen .logoHeader__div__contenido, .fondo, .fondo .main__QS__texto, .main__Proyectos, .mainColabora, .mainColabora button, .main__Contactos, .main__Contactos .sectionRS {
+.divPrueba, .fondo, .fondo .main__QS__texto, .main__Proyectos, .mainColabora, .mainColabora button, .main__Contactos, .main__Contactos .sectionRS {
   display: flex;
   flex-direction: column; }
 
@@ -30,8 +30,10 @@
       background-color: white;
       max-width: 140rem;
       width: 168vw;
-      min-width: 120rem;
-      height: 170vh;
+      min-width: 120.5rem;
+      max-height: 175vh;
+      height: 175vh;
+      min-height: 60rem;
       top: -20rem;
       left: -92rem;
       border-radius: 50%;
@@ -46,52 +48,12 @@
           width: 14rem; }
           .header__divImagen .logoHeader__div__img:hover {
             cursor: pointer; }
-        .header__divImagen .logoHeader__div__contenido {
-          margin-top: 35vh;
-          min-width: 30vw;
-          width: 40vw;
-          max-width: 50rem;
-          min-height: fit-content;
-          height: 50vh;
-          align-items: flex-start; }
-          .header__divImagen .logoHeader__div__contenido .h1 {
-            font-size: 3rem;
-            font-weight: 300;
-            color: #0199c8;
-            line-height: 68px;
-            max-width: 40rem; }
-          .header__divImagen .logoHeader__div__contenido .h2 {
-            font-size: 3rem;
-            font-weight: 700;
-            color: #0199c8;
-            line-height: 50px; }
-          .header__divImagen .logoHeader__div__contenido .p {
-            margin-top: 30px;
-            font-size: 2.3rem;
-            font-weight: 400;
-            color: #000;
-            max-width: 45rem;
-            margin-bottom: 60px; }
-          .header__divImagen .logoHeader__div__contenido .btnDonar {
-            font-size: 2.5rem;
-            font-weight: 700;
-            text-decoration: none;
-            border-radius: 10px;
-            padding: 0.8rem 2.5rem;
-            border: none;
-            background-color: #0199c8;
-            color: #ffff;
-            align-self: center; }
-            .header__divImagen .logoHeader__div__contenido .btnDonar:hover {
-              cursor: pointer;
-              background-color: #72b6ca; }
-            .header__divImagen .logoHeader__div__contenido .btnDonar__a {
-              color: #ffff; }
     .header__divImagen .prueba {
       background-color: transparent;
       position: absolute; }
   .header__navBar {
-    margin-right: 1.5rem; }
+    margin-right: 1.5rem;
+    z-index: 10; }
     .header__navBar__anchor {
       color: #ffff;
       font-size: 2rem;
@@ -114,6 +76,48 @@
         border-radius: 9px; }
   .header #check, .header .bar-btn {
     display: none; }
+
+.divPrueba {
+  position: absolute;
+  margin: 15vh 0 11vh 1rem;
+  width: 40%;
+  height: 74vh;
+  z-index: 1;
+  align-items: flex-start;
+  justify-content: center; }
+  .divPrueba .h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #0199c8;
+    line-height: 68px;
+    max-width: 40rem; }
+  .divPrueba .h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0199c8;
+    line-height: 50px; }
+  .divPrueba .p {
+    margin-top: 30px;
+    font-size: 2.3rem;
+    font-weight: 400;
+    color: #000;
+    max-width: 45rem;
+    margin-bottom: 60px; }
+  .divPrueba .btnDonar {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 0.8rem 2.5rem;
+    border: none;
+    background-color: #0199c8;
+    color: #ffff;
+    align-self: center; }
+    .divPrueba .btnDonar:hover {
+      cursor: pointer;
+      background-color: #72b6ca; }
+    .divPrueba .btnDonar__a {
+      color: #ffff; }
 
 .headerDos {
   position: fixed;
@@ -442,16 +446,15 @@ main {
       margin: 19rem 0 0 94rem; }
       .header__divImagen .logoHeader__div__img, .headerDos__divImagen .logoHeader__div__img {
         width: 12rem; }
-      .header__divImagen .logoHeader__div__contenido, .headerDos__divImagen .logoHeader__div__contenido {
-        margin-top: 15vh; }
-        .header__divImagen .logoHeader__div__contenido .h1, .headerDos__divImagen .logoHeader__div__contenido .h1 {
-          font-size: 2.6rem; }
-        .header__divImagen .logoHeader__div__contenido .h2, .headerDos__divImagen .logoHeader__div__contenido .h2 {
-          font-size: 2.6rem; }
-        .header__divImagen .logoHeader__div__contenido .p, .headerDos__divImagen .logoHeader__div__contenido .p {
-          font-size: 1.8rem; }
-        .header__divImagen .logoHeader__div__contenido .btnDonar, .headerDos__divImagen .logoHeader__div__contenido .btnDonar {
-          font-size: 2rem; } }
+  .divPrueba .h1 {
+    font-size: 2.6rem; }
+  .divPrueba .h2 {
+    font-size: 2.6rem; }
+  .divPrueba .p {
+    font-size: 1.8rem; }
+  .divPrueba .btnDonar {
+    font-size: 2rem;
+    margin-right: 20%; } }
 
 @media only screen and (max-width: 1245px) {
   .header__navBar__anchor, .headerDos__navBar__anchor {
@@ -460,21 +463,19 @@ main {
     margin-left: 0.8rem; }
   .header__divImagen .logoHeader__div__img, .headerDos__divImagen .logoHeader__div__img {
     width: 10rem; }
-  .header__divImagen .logoHeader__div__contenido, .headerDos__divImagen .logoHeader__div__contenido {
-    margin-top: 10vh; }
-    .header__divImagen .logoHeader__div__contenido .h1, .headerDos__divImagen .logoHeader__div__contenido .h1 {
-      font-size: 2.2rem;
-      line-height: 40px; }
-    .header__divImagen .logoHeader__div__contenido .h2, .headerDos__divImagen .logoHeader__div__contenido .h2 {
-      font-size: 2.2rem;
-      line-height: 40px; }
-    .header__divImagen .logoHeader__div__contenido .p, .headerDos__divImagen .logoHeader__div__contenido .p {
-      margin-top: 15px;
-      font-size: 1.4rem;
-      margin-bottom: 30px; }
-    .header__divImagen .logoHeader__div__contenido .btnDonar, .headerDos__divImagen .logoHeader__div__contenido .btnDonar {
-      font-size: 1.6rem;
-      align-self: flex-start; } }
+  .divPrueba .h1 {
+    font-size: 2.1rem;
+    line-height: 40px; }
+  .divPrueba .h2 {
+    font-size: 2.1rem;
+    line-height: 40px; }
+  .divPrueba .p {
+    margin-top: 15px;
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    max-width: 25rem; }
+  .divPrueba .btnDonar {
+    font-size: 1.6rem; } }
 
 @media only screen and (max-width: 1020px) {
   .header__navBar__anchor, .headerDos__navBar__anchor {
@@ -489,19 +490,17 @@ main {
     margin-left: 0.2rem; }
   .header__divImagen .logoHeader__div__img, .headerDos__divImagen .logoHeader__div__img {
     width: 7rem; }
-  .header__divImagen .logoHeader__div__contenido, .headerDos__divImagen .logoHeader__div__contenido {
+  .divPrueba {
     margin-top: 10vh; }
-    .header__divImagen .logoHeader__div__contenido .h1, .headerDos__divImagen .logoHeader__div__contenido .h1 {
-      font-size: 2.2rem;
+    .divPrueba .h1 {
       line-height: 40px; }
-    .header__divImagen .logoHeader__div__contenido .h2, .headerDos__divImagen .logoHeader__div__contenido .h2 {
-      font-size: 2.2rem;
+    .divPrueba .h2 {
       line-height: 40px; }
-    .header__divImagen .logoHeader__div__contenido .p, .headerDos__divImagen .logoHeader__div__contenido .p {
+    .divPrueba .p {
       margin-top: 15px;
       font-size: 1.4rem;
       margin-bottom: 30px; }
-    .header__divImagen .logoHeader__div__contenido .btnDonar, .headerDos__divImagen .logoHeader__div__contenido .btnDonar {
+    .divPrueba .btnDonar {
       font-size: 1.6rem;
       align-self: flex-start; } }
 
@@ -512,15 +511,15 @@ main {
       left: -99rem; }
       .header__divImagen .logoHeader__div, .headerDos__divImagen .logoHeader__div {
         margin: 19rem 0 0 101rem; }
-        .header__divImagen .logoHeader__div__contenido .h1, .headerDos__divImagen .logoHeader__div__contenido .h1 {
-          font-size: 1.8rem;
-          line-height: 33px; }
-        .header__divImagen .logoHeader__div__contenido .h2, .headerDos__divImagen .logoHeader__div__contenido .h2 {
-          font-size: 1.8rem;
-          line-height: 33px; }
-        .header__divImagen .logoHeader__div__contenido .p, .headerDos__divImagen .logoHeader__div__contenido .p {
-          margin-top: 10px;
-          font-size: 1rem;
-          margin-bottom: 20px; }
-        .header__divImagen .logoHeader__div__contenido .btnDonar, .headerDos__divImagen .logoHeader__div__contenido .btnDonar {
-          font-size: 1.2rem; } }
+  .divPrueba .h1 {
+    font-size: 1.8rem;
+    line-height: 33px; }
+  .divPrueba .h2 {
+    font-size: 1.8rem;
+    line-height: 33px; }
+  .divPrueba .p {
+    margin-top: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px; }
+  .divPrueba .btnDonar {
+    font-size: 1.2rem; } }
