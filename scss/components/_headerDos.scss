@@ -54,12 +54,73 @@
         }
     }
 
-    #check, .bar-btn{
-        display: none;
-    }
-
+    
     @keyframes submenu{
         from{height: 0;}
         to{height: 9rem;}
+    }
+}
+
+#check, .bar-btnDos{
+    display: none;
+}
+
+.divPrueba{
+    position: absolute;
+    // margin-top: 13vh;
+    // margin-bottom: 11vh;
+    margin: 15vh 0 11vh 1rem;
+    width: 40%;
+    height: 74vh;
+    // background-color: gray;
+    z-index: 1;
+
+    @extend %flexboxColumn;
+    align-items: flex-start;
+    justify-content: center;
+
+    .h1{
+        font-size: 3rem;
+        font-weight: 300;
+        color: $colorPrincipal;
+        line-height: 68px;
+        max-width: 40rem;
+    }
+
+    .h2{
+        font-size: 3rem;
+        font-weight: 700;
+        color: $colorPrincipal;
+        line-height: 50px;
+    }
+
+    .p{
+        margin-top: 30px;
+        font-size: 2.3rem;
+        font-weight: 400;
+        color: #000;
+        max-width: 45rem;
+        margin-bottom: 60px;
+    }
+
+    .btnDonar{
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-decoration: none;
+        border-radius: 10px;
+        padding: 0.8rem 2.5rem;
+        border: none;
+        background-color: $colorPrincipal;
+        color: $colorSecundario;
+        align-self: center;
+
+        &:hover{
+            cursor: pointer;
+            background-color: $colorPrincipalClaro;
+        }
+
+        &__a{
+            color: $colorSecundario;
+        }
     }
 }

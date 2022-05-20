@@ -148,10 +148,14 @@
         }
     }
 
-    #check, .bar-btn{
-        display: none;
-    }
+    // #check, .bar-btn{
+    //     display: none;
+    // }
     
+}
+
+#check, .bar-btn{
+    display: none;
 }
 
 .divPrueba{
@@ -212,4 +216,9 @@
             color: $colorSecundario;
         }
     }
+}
+
+@keyframes submenu{
+    from{height: 0;}
+    to{height: 9rem;}
 }

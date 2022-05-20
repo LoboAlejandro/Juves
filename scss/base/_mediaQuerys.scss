@@ -278,6 +278,122 @@
     }
 }
 
-@media only screen and (max-width: 690px){
+@media only screen and (max-width: 710px){
     //MENU HAMBURGUESA
+    .header__navBar{
+        position: fixed;
+        display: none;
+        width: 15rem;
+        top: 4.65rem;
+        right: -1.5rem;
+        background: $colorPrincipal;
+        text-align: center;
+        transition: all .5s;
+        justify-content: center;
+        padding: 1rem;
+
+        &__ul{
+            animation: submenu;
+            animation-timing-function: ease-in-out;
+            animation-duration: 120ms;
+        }
+        
+        &__item{
+            margin-top: 0.5rem;
+            display: none;
+            transition: all 3s;
+        }
+
+        &__anchor{
+            color: white;
+            font-size: 1.6rem;
+
+            &:active, &:hover{
+                color: $colorSecundario;
+                transition: .3s;
+            }
+        }
+    }
+
+    .headerDos__navBar{
+        position: fixed;
+        display: none;
+        width: 15rem;
+        top: 4.65rem;
+        right: -1.5rem;
+        background: $colorSecundario;
+        text-align: center;
+        transition: all .5s;
+        justify-content: center;
+        padding: 1rem;
+
+        &__ul{
+            animation: submenu;
+            animation-timing-function: ease-in-out;
+            animation-duration: 120ms;
+        }
+        
+        &__item{
+            margin-top: 0.5rem;
+            display: none;
+            transition: all 3s;
+        }
+
+        &__anchor{
+            color: $colorPrincipal;
+            font-size: 1.6rem;
+
+            &:active, &:hover{
+                color: $colorPrincipal;
+                transition: .3s;
+            }
+        }
+    }
+
+    // #check, .bar-btn{
+    //     display: inherit;
+    // }
+
+    .bar-btn, .bar-btnDos{
+        display: inherit;
+        font-size: 2rem;
+        color: white;
+        margin-right: 1rem;
+        cursor: pointer;
+        transition: transform ease 120ms;
+        z-index: 100;
+    }
+
+    .bar-btnDos{
+        color: $colorPrincipal;
+    }
+
+    .bar-btn i, .bar-btnDos i{
+        transition: all 120ms;
+    }
+
+    .bar-btn i, .bar-btnDos i{
+        transition: all 120ms;
+    }
+
+    #check:checked ~ .bar-btn i, #check:checked ~ .bar-btnDos i{
+        transform: rotateZ(90deg);
+    }
+
+    #check:checked ~ ul{
+        display: flex;
+    }
+
+    #check:checked ~ .header__navBar, #check:checked ~ .headerDos__navBar{
+        display: inherit;
+    }
+
+    #check:checked ~ .header__navBar li, #check:checked ~ .headerDos__navBar li{
+        display: block;
+    }
+}
+
+@keyframes submenu{
+    from{height: 0;}
+    to{height: 9rem;}
 }

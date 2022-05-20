@@ -74,8 +74,9 @@
         border: 2px solid #ffff;
         padding: 0.2rem 0.6rem;
         border-radius: 9px; }
-  .header #check, .header .bar-btn {
-    display: none; }
+
+#check, .bar-btn {
+  display: none; }
 
 .divPrueba {
   position: absolute;
@@ -119,6 +120,12 @@
     .divPrueba .btnDonar__a {
       color: #ffff; }
 
+@keyframes submenu {
+  from {
+    height: 0; }
+  to {
+    height: 9rem; } }
+
 .headerDos {
   position: fixed;
   top: 0;
@@ -154,14 +161,57 @@
         border: 2px solid #0199c8;
         padding: 0.2rem 0.6rem;
         border-radius: 9px; }
-  .headerDos #check, .headerDos .bar-btn {
-    display: none; }
 
 @keyframes submenu {
   from {
     height: 0; }
   to {
     height: 9rem; } }
+
+#check, .bar-btnDos {
+  display: none; }
+
+.divPrueba {
+  position: absolute;
+  margin: 15vh 0 11vh 1rem;
+  width: 40%;
+  height: 74vh;
+  z-index: 1;
+  align-items: flex-start;
+  justify-content: center; }
+  .divPrueba .h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #0199c8;
+    line-height: 68px;
+    max-width: 40rem; }
+  .divPrueba .h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0199c8;
+    line-height: 50px; }
+  .divPrueba .p {
+    margin-top: 30px;
+    font-size: 2.3rem;
+    font-weight: 400;
+    color: #000;
+    max-width: 45rem;
+    margin-bottom: 60px; }
+  .divPrueba .btnDonar {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 0.8rem 2.5rem;
+    border: none;
+    background-color: #0199c8;
+    color: #ffff;
+    align-self: center; }
+    .divPrueba .btnDonar:hover {
+      cursor: pointer;
+      background-color: #72b6ca; }
+    .divPrueba .btnDonar__a {
+      color: #ffff; }
 
 .mainIndex {
   padding-top: 0;
@@ -523,3 +573,83 @@ main {
     margin-bottom: 20px; }
   .divPrueba .btnDonar {
     font-size: 1.2rem; } }
+
+@media only screen and (max-width: 710px) {
+  .header__navBar {
+    position: fixed;
+    display: none;
+    width: 15rem;
+    top: 4.65rem;
+    right: -1.5rem;
+    background: #0199c8;
+    text-align: center;
+    transition: all .5s;
+    justify-content: center;
+    padding: 1rem; }
+    .header__navBar__ul {
+      animation: submenu;
+      animation-timing-function: ease-in-out;
+      animation-duration: 120ms; }
+    .header__navBar__item {
+      margin-top: 0.5rem;
+      display: none;
+      transition: all 3s; }
+    .header__navBar__anchor {
+      color: white;
+      font-size: 1.6rem; }
+      .header__navBar__anchor:active, .header__navBar__anchor:hover {
+        color: #ffff;
+        transition: .3s; }
+  .headerDos__navBar {
+    position: fixed;
+    display: none;
+    width: 15rem;
+    top: 4.65rem;
+    right: -1.5rem;
+    background: #ffff;
+    text-align: center;
+    transition: all .5s;
+    justify-content: center;
+    padding: 1rem; }
+    .headerDos__navBar__ul {
+      animation: submenu;
+      animation-timing-function: ease-in-out;
+      animation-duration: 120ms; }
+    .headerDos__navBar__item {
+      margin-top: 0.5rem;
+      display: none;
+      transition: all 3s; }
+    .headerDos__navBar__anchor {
+      color: #0199c8;
+      font-size: 1.6rem; }
+      .headerDos__navBar__anchor:active, .headerDos__navBar__anchor:hover {
+        color: #0199c8;
+        transition: .3s; }
+  .bar-btn, .bar-btnDos {
+    display: inherit;
+    font-size: 2rem;
+    color: white;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: transform ease 120ms;
+    z-index: 100; }
+  .bar-btnDos {
+    color: #0199c8; }
+  .bar-btn i, .bar-btnDos i {
+    transition: all 120ms; }
+  .bar-btn i, .bar-btnDos i {
+    transition: all 120ms; }
+  #check:checked ~ .bar-btn i, #check:checked ~ .bar-btnDos i {
+    transform: rotateZ(90deg); }
+  #check:checked ~ ul {
+    display: flex; }
+  #check:checked ~ .header__navBar, #check:checked ~ .headerDos__navBar {
+    display: inherit; }
+  #check:checked ~ .header__navBar li, #check:checked ~ .headerDos__navBar li {
+    display: block; } }
+
+@keyframes submenu {
+  from {
+    height: 0; }
+  to {
+    height: 9rem; } }
