@@ -1,19 +1,21 @@
 .fondo{
     background-color: $colorPrincipal;
     @extend %flexboxColumn;
-
+    
     .main__QS{ 
         @extend %flexboxRow;
+        padding: 0 2rem 0 2rem;
+        // flex-wrap: wrap;
         background-color: $colorPrincipal;
         padding-top: 1rem;
         color:$colorSecundario;
-        // justify-content: center;
+        justify-content: center;
+        align-items: center;
         text-align: left;
         
         img{
             position: relative;
             width: 750px;
-            height: 470px;
         }
     
         p{
@@ -33,7 +35,10 @@
             @extend %flexboxColumn;
             justify-content: center;
             align-items: center;
-            padding-left: 2rem;
+            align-self: flex-start;
+            // padding-left: 2rem;
+            // min-width: 30rem;
+            // text-align: center;
         }
     }
 }

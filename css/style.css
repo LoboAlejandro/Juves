@@ -229,14 +229,16 @@ main {
 .fondo {
   background-color: #0199c8; }
   .fondo .main__QS {
+    padding: 0 2rem 0 2rem;
     background-color: #0199c8;
     padding-top: 1rem;
     color: #ffff;
+    justify-content: center;
+    align-items: center;
     text-align: left; }
     .fondo .main__QS img {
       position: relative;
-      width: 750px;
-      height: 470px; }
+      width: 750px; }
     .fondo .main__QS p {
       font-weight: 400;
       font-size: 25px;
@@ -249,7 +251,7 @@ main {
     .fondo .main__QS__texto {
       justify-content: center;
       align-items: center;
-      padding-left: 2rem; }
+      align-self: flex-start; }
 
 .main__Proyectos {
   padding-top: 130px;
@@ -504,7 +506,9 @@ main {
     font-size: 1.8rem; }
   .divPrueba .btnDonar {
     font-size: 2rem;
-    margin-right: 20%; } }
+    margin-right: 20%; }
+  .fondo .main__QS img {
+    width: 600px; } }
 
 @media only screen and (max-width: 1245px) {
   .header__navBar__anchor, .headerDos__navBar__anchor {
@@ -525,20 +529,44 @@ main {
     margin-bottom: 30px;
     max-width: 25rem; }
   .divPrueba .btnDonar {
-    font-size: 1.6rem; } }
+    font-size: 1.6rem; }
+  .fondo .main__QS img {
+    width: 540px; }
+  .fondo .main__QS p {
+    font-size: 18px;
+    line-height: 23px; }
+  .fondo .main__QS .titulo__main {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 50px; }
+  .fondo .main__QS__texto {
+    justify-content: center;
+    align-items: center; } }
 
 @media only screen and (max-width: 1020px) {
   .header__navBar__anchor, .headerDos__navBar__anchor {
     font-size: 1rem; }
   .header__navBar__item, .headerDos__navBar__item {
-    margin-left: 0.2rem; } }
+    margin-left: 0.2rem; }
+  .fondo .main__QS img {
+    width: 440px; }
+  .fondo .main__QS p {
+    font-size: 16px;
+    line-height: 23px; }
+  .fondo .main__QS .titulo__main {
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 50px; }
+  .fondo .main__QS__texto {
+    justify-content: center;
+    align-items: center; } }
 
 @media only screen and (max-width: 890px) {
   .header__navBar__anchor, .headerDos__navBar__anchor {
     font-size: 0.8rem; }
   .header__navBar__item, .headerDos__navBar__item {
     margin-left: 0.2rem; }
-  .header__divImagen .logoHeader__div__img, .headerDos__divImagen .logoHeader__div__img {
+  .header__divImagen .logoHeader__img, .headerDos__divImagen .logoHeader__img {
     width: 7rem; }
   .divPrueba .h1 {
     line-height: 40px; }
@@ -550,15 +578,28 @@ main {
     margin-bottom: 30px; }
   .divPrueba .btnDonar {
     font-size: 1.6rem;
-    align-self: flex-start; } }
+    align-self: flex-start; }
+  .fondo .main__QS img {
+    width: 380px; }
+  .fondo .main__QS p {
+    font-size: 14px;
+    line-height: 20px; }
+  .fondo .main__QS .titulo__main {
+    font-size: 42px;
+    line-height: 45px; }
+  .fondo .main__QS__texto {
+    justify-content: center;
+    align-items: center; } }
 
 @media only screen and (max-width: 800px) {
-  .header__divImagen, .headerDos__divImagen {
-    min-width: 12rem; }
-    .header__divImagen .logoHeader, .headerDos__divImagen .logoHeader {
-      left: -99rem; }
-      .header__divImagen .logoHeader__div, .headerDos__divImagen .logoHeader__div {
-        margin: 19rem 0 0 101rem; }
+  .header, .headerDos {
+    height: 6rem; }
+    .header__divImagen, .headerDos__divImagen {
+      min-width: 12rem; }
+      .header__divImagen .logoHeader, .headerDos__divImagen .logoHeader {
+        left: -99rem; }
+        .header__divImagen .logoHeader__div, .headerDos__divImagen .logoHeader__div {
+          margin: 19rem 0 0 101rem; }
   .divPrueba .h1 {
     font-size: 1.8rem;
     line-height: 33px; }
@@ -570,14 +611,24 @@ main {
     font-size: 1rem;
     margin-bottom: 20px; }
   .divPrueba .btnDonar {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .fondo .main__QS img {
+    width: 330px; }
+  .fondo .main__QS p {
+    font-size: 13px;
+    line-height: 20px; }
+  .fondo .main__QS .titulo__main {
+    font-size: 38px;
+    line-height: 45px; }
+  .fondo .main__QS__texto {
+    justify-content: center;
+    align-items: center; } }
 
 @media only screen and (max-width: 710px) {
   .header__navBar {
     position: fixed;
     display: none;
     width: 15rem;
-    top: 4.65rem;
     right: -1.5rem;
     background: #0199c8;
     text-align: center;
@@ -602,7 +653,7 @@ main {
     position: fixed;
     display: none;
     width: 15rem;
-    top: 4.65rem;
+    top: 4rem;
     right: -1.5rem;
     background: #ffff;
     text-align: center;
@@ -644,10 +695,36 @@ main {
   #check:checked ~ .header__navBar, #check:checked ~ .headerDos__navBar {
     display: inherit; }
   #check:checked ~ .header__navBar li, #check:checked ~ .headerDos__navBar li {
-    display: block; } }
+    display: block; }
+  .header__navBar__anchor, .headerDos__navBar__anchor {
+    font-size: 0.8rem; }
+  .header__navBar__item, .headerDos__navBar__item {
+    margin-left: 0.2rem; }
+  .header__divImagen .logoHeader__div__img, .headerDos__divImagen .logoHeader__div__img {
+    width: 7rem; }
+  main {
+    padding-top: 5.5rem; }
+  .fondo .main__QS {
+    flex-direction: column; }
+    .fondo .main__QS img {
+      width: 380px; }
+    .fondo .main__QS p {
+      font-size: 12px;
+      line-height: 20px; }
+    .fondo .main__QS .titulo__main {
+      font-size: 38px;
+      line-height: 40px;
+      align-self: center; }
+    .fondo .main__QS__texto {
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+  @keyframes submenu {
+    from {
+      height: 0; }
+    to {
+      height: 9rem; } } }
 
-@keyframes submenu {
-  from {
-    height: 0; }
-  to {
-    height: 9rem; } }
+@media only screen and (max-width: 425px) {
+  .fondo .main__QS img {
+    width: 300px; } }
