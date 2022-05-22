@@ -30,7 +30,7 @@
       background-color: white;
       max-width: 140rem;
       width: 168vw;
-      min-width: 120.5rem;
+      min-width: 122rem;
       max-height: 175vh;
       height: 175vh;
       min-height: 60rem;
@@ -636,10 +636,9 @@ main {
     height: 6rem; }
     .header__divImagen, .headerDos__divImagen {
       min-width: 12rem; }
-      .header__divImagen .logoHeader, .headerDos__divImagen .logoHeader {
-        left: -99rem; }
-        .header__divImagen .logoHeader__div, .headerDos__divImagen .logoHeader__div {
-          margin: 19rem 0 0 101rem; }
+      .header__divImagen .logoHeader__div__img, .headerDos__divImagen .logoHeader__div__img {
+        background-color: white;
+        border-radius: 10px; }
   .divPrueba .h1 {
     font-size: 1.8rem;
     line-height: 33px; }

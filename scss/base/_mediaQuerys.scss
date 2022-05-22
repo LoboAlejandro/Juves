@@ -403,10 +403,14 @@
         &__divImagen{
             min-width: 12rem;
             .logoHeader{
-                left: -99rem;
-
+                // left: -99rem;
                 &__div{
-                    margin: 19rem 0 0 101rem;
+                    // margin: 19rem 0 0 101rem;
+                    
+                    &__img{
+                        background-color: white;
+                        border-radius: 10px;
+                    }
 
                     // &__contenido{
                     //     .h1{
@@ -491,7 +495,6 @@
 
 @media only screen and (max-width: 710px){
     //MENU HAMBURGUESA
-
     //HEADER 710px
 
     .header__navBar{
