@@ -498,6 +498,7 @@
         display: none;
         width: 15rem;
         right: -1.5rem;
+        top: 3.8rem;
         background: $colorPrincipal;
         text-align: center;
         transition: all .5s;
@@ -531,7 +532,7 @@
         position: fixed;
         display: none;
         width: 15rem;
-        top: 4rem;
+        top: 3.8rem;
         right: -1.5rem;
         background: $colorSecundario;
         text-align: center;
@@ -584,9 +585,9 @@
         transition: all 120ms;
     }
 
-    .bar-btn i, .bar-btnDos i{
-        transition: all 120ms;
-    }
+    // .bar-btn i, .bar-btnDos i{
+    //     transition: all 120ms;
+    // }
 
     #check:checked ~ .bar-btn i, #check:checked ~ .bar-btnDos i{
         transform: rotateZ(-90deg);
@@ -598,6 +599,7 @@
 
     #check:checked ~ .header__navBar, #check:checked ~ .headerDos__navBar{
         display: inherit;
+        border-radius: 0 0 0 10px;
     }
 
     #check:checked ~ .header__navBar li, #check:checked ~ .headerDos__navBar li{
