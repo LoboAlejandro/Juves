@@ -1,4 +1,6 @@
 @media only screen and (max-width: 1650px){
+    //HEADER 1650px
+
     .header, .headerDos{
         height: 7rem;
         
@@ -42,6 +44,8 @@
         }
     }
 
+    //MAIN 1650px
+
     .divPrueba{
         // margin-top: 15vh;
         .h1{
@@ -62,6 +66,8 @@
         }
     }
 
+    //QUIENES SOMOS 1650px
+
     .fondo{
         .main__QS{
             img{
@@ -69,12 +75,12 @@
             }
         }
     }
-
 }
 
 @media only screen and (max-width: 1245px){
-    .header, .headerDos{
+    //HEADER 1245px
 
+    .header, .headerDos{
         &__navBar{
             &__anchor{
                 font-size: 1.3rem;
@@ -120,6 +126,8 @@
         }
     }
 
+    //MAIN 1245px
+
     .divPrueba{
         // margin-top: 10vh;
         .h1{
@@ -145,6 +153,8 @@
             // margin-right: 50%;
         }
     }
+
+    //QUIENES SOMOS 1245px
 
     .fondo{
         .main__QS{
@@ -175,6 +185,8 @@
 }
 
 @media only screen and (max-width: 1020px){
+    //HEADER 1020px
+
     .header, .headerDos{
         &__navBar{
             &__anchor{
@@ -186,6 +198,8 @@
             }
         }
     }
+
+    //QUIENES SOMOS 1020px
 
     .fondo{
         .main__QS{
@@ -214,6 +228,8 @@
         }
     }
 
+    //COLABORA 1020px
+
     .mainColabora{
         h1{
             font-size: 50px;
@@ -236,6 +252,8 @@
 }
 
 @media only screen and (max-width: 890px){
+    //HEADER 890px
+
     .header, .headerDos{
         &__navBar{
             &__anchor{
@@ -279,6 +297,8 @@
         }
     }
 
+    //MAIN 890px
+
     .divPrueba{
         // margin-top: 10vh;
         .h1{
@@ -300,6 +320,8 @@
             align-self: flex-start;
         }
     }
+
+    //QUIENES SOMOS 890px
 
     .fondo{
         .main__QS{
@@ -326,9 +348,56 @@
             }
         }
     }
+
+    //CONTACTO 890px
+    
+    .main__Contactos{
+        .h1__Contactos{
+            font-size: 45px;
+            line-height: 48px;
+        }
+
+        h3{
+            font-size: 22px;
+            line-height: 30px;
+            padding-top: 15px;
+        }
+    
+        p{
+            font-size: 25px;
+            line-height: 30px;
+        }
+
+        .main__info{
+            padding-top: 30px;
+        }
+
+        .sectionRS{
+            h2{
+                font-size: 38px;
+                line-height: 42px;
+                padding-top: 25px;
+            }
+    
+            &__icons{
+                padding-top: 10px;
+    
+                .faceItem{
+                    width: 4.5rem;
+                }
+    
+                .igItem{
+                    width: 3rem;
+                    height: 3rem;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 800px){
+    //HEADER 800px
+
     .header, .headerDos{
         height: 6rem;
         &__divImagen{
@@ -365,6 +434,8 @@
         }
     }
 
+    //MAIN 800PX
+
     .divPrueba{
         .h1{
             font-size: 1.8rem;
@@ -386,6 +457,8 @@
             font-size: 1.2rem;
         }
     }
+
+    //QUIENES SOMOS 800px
 
     .fondo{
         .main__QS{
@@ -418,6 +491,8 @@
 
 @media only screen and (max-width: 710px){
     //MENU HAMBURGUESA
+    //HEADER 710px
+
     .header__navBar{
         position: fixed;
         display: none;
@@ -529,6 +604,7 @@
         display: block;
     }
 
+
     .header, .headerDos{
         &__navBar{
             &__anchor{
@@ -551,9 +627,13 @@
         }
     }
 
+    //MAIN 710px
+
     main{
         padding-top: 5.5rem;
     }
+
+    //QUIENES SOMOS 710px
 
     .fondo{
         .main__QS{
@@ -581,6 +661,8 @@
             }
         }
     }
+
+    //COLABORA 710px
 
     .mainColabora{
         h1{
@@ -611,6 +693,42 @@
         }
     }
 
+    //CONTACTOS 710px
+
+    .main__Contactos{
+        .h1__Contactos{
+            font-size: 35px;
+            line-height: 38px;
+        }
+
+        h3{
+            font-size: 17px;
+            line-height: 22px;
+        }
+    
+        p{
+            font-size: 22px;
+            line-height: 25px;
+        }
+
+        .main__info{
+            padding-top: 20px;
+        }
+
+        .sectionRS{
+            h2{
+                font-size: 30px;
+                line-height: 34px;
+                padding-top: 22px;
+                text-align: center;
+            }
+    
+            &__icons{
+                padding-top: 5px;
+            }
+        }
+    }
+
     @keyframes submenu{
         from{height: 0;}
         to{height: 9rem;}
@@ -618,6 +736,7 @@
 }
 
 @media only screen and (max-width: 425px){
+    //QUIENES SOMOS 425px
     .fondo{
         .main__QS{
             img{
@@ -625,6 +744,8 @@
             }
         }
     }
+
+    //COLABORA 425px
 
     .mainColabora{
         h1{
@@ -651,6 +772,41 @@
 
             img{
                 width: 1.5rem;
+            }
+        }
+    }
+
+    //CONTACTO 425px
+
+    .main__Contactos{
+        .h1__Contactos{
+            font-size: 30px;
+            line-height: 34px;
+        }
+
+        h3{
+            font-size: 15px;
+            line-height: 19px;
+        }
+    
+        p{
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        .main__info{
+            padding-top: 10px;
+        }
+
+        .sectionRS{
+            h2{
+                font-size: 25px;
+                line-height: 30px;
+                padding-top: 15px;
+            }
+    
+            &__icons{
+                padding-top: 0px;
             }
         }
     }
