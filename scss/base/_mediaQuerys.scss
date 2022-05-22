@@ -499,7 +499,7 @@
     .header__navBar{
         position: fixed;
         display: none;
-        width: 15rem;
+        width: 17rem;
         right: -1.5rem;
         top: 3.8rem;
         background: $colorPrincipal;
@@ -534,7 +534,7 @@
     .headerDos__navBar{
         position: fixed;
         display: none;
-        width: 15rem;
+        width: 17rem;
         top: 3.8rem;
         right: -1.5rem;
         background: $colorSecundario;
@@ -607,13 +607,14 @@
 
     #check:checked ~ .header__navBar li, #check:checked ~ .headerDos__navBar li{
         display: block;
+        margin-top: 0.8rem;
     }
 
 
     .header, .headerDos{
         &__navBar{
             &__anchor{
-                font-size: 0.8rem;
+                font-size: 1.4rem;
             }
 
             &__item{
