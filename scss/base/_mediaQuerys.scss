@@ -607,6 +607,7 @@
 
     #check:checked ~ .header__navBar li, #check:checked ~ .headerDos__navBar li{
         display: block;
+        margin-top: 0.8rem;
     }
 
 

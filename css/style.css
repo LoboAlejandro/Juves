@@ -734,7 +734,8 @@ main {
     display: inherit;
     border-radius: 0 0 0 10px; }
   #check:checked ~ .header__navBar li, #check:checked ~ .headerDos__navBar li {
-    display: block; }
+    display: block;
+    margin-top: 0.8rem; }
   .header__navBar__anchor, .headerDos__navBar__anchor {
     font-size: 1.4rem; }
   .header__navBar__item, .headerDos__navBar__item {
