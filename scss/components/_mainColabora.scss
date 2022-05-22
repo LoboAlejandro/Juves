@@ -2,6 +2,8 @@
     background-color: $colorSecundario;
     @extend %flexboxColumn;
     align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
     h1{
         font-family: 'Nunito';
@@ -22,7 +24,10 @@
 
     &__divBtn{
         @extend %flexboxRow;
+        align-items: center;
+        justify-content: center;
         padding-top: 3rem;
+        width: 100%
     }
 
     button{

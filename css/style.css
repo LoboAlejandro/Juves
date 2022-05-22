@@ -397,7 +397,9 @@ main {
 
 .mainColabora {
   background-color: #ffff;
-  align-items: center; }
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem; }
   .mainColabora h1 {
     font-family: 'Nunito';
     font-style: normal;
@@ -412,7 +414,10 @@ main {
     color: #0199c8;
     padding-top: 10px; }
   .mainColabora__divBtn {
-    padding-top: 3rem; }
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    width: 100%; }
   .mainColabora button {
     justify-content: center;
     align-items: center;
@@ -559,7 +564,19 @@ main {
     line-height: 50px; }
   .fondo .main__QS__texto {
     justify-content: center;
-    align-items: center; } }
+    align-items: center; }
+  .mainColabora h1 {
+    font-size: 50px;
+    line-height: 72px; }
+  .mainColabora h3 {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 5px; }
+  .mainColabora button {
+    height: 160px;
+    width: 275px;
+    font-size: 19px;
+    border-radius: 33px; } }
 
 @media only screen and (max-width: 890px) {
   .header__navBar__anchor, .headerDos__navBar__anchor {
@@ -689,7 +706,7 @@ main {
   .bar-btn i, .bar-btnDos i {
     transition: all 120ms; }
   #check:checked ~ .bar-btn i, #check:checked ~ .bar-btnDos i {
-    transform: rotateZ(90deg); }
+    transform: rotateZ(-90deg); }
   #check:checked ~ ul {
     display: flex; }
   #check:checked ~ .header__navBar, #check:checked ~ .headerDos__navBar {
@@ -719,6 +736,23 @@ main {
       justify-content: center;
       align-items: center;
       text-align: center; }
+  .mainColabora h1 {
+    font-size: 30px;
+    line-height: 30px; }
+  .mainColabora h3 {
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 8px; }
+  .mainColabora__divBtn {
+    padding-top: 1.5rem; }
+  .mainColabora button {
+    height: 70px;
+    width: 120px;
+    font-size: 9px;
+    line-height: 11px;
+    border-radius: 20px; }
+    .mainColabora button img {
+      width: 2.2rem; }
   @keyframes submenu {
     from {
       height: 0; }
@@ -727,4 +761,20 @@ main {
 
 @media only screen and (max-width: 425px) {
   .fondo .main__QS img {
-    width: 300px; } }
+    width: 300px; }
+  .mainColabora h1 {
+    font-size: 22px;
+    line-height: 24px; }
+  .mainColabora h3 {
+    font-size: 12px;
+    line-height: 14px; }
+  .mainColabora__divBtn {
+    justify-content: space-between; }
+  .mainColabora button {
+    height: 45px;
+    width: 65px;
+    font-size: 8px;
+    line-height: 10px;
+    border-radius: 9px; }
+    .mainColabora button img {
+      width: 1.5rem; } }
