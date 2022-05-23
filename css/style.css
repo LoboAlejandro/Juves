@@ -22,7 +22,7 @@
   align-items: center;
   background: linear-gradient(to bottom, #0199c8 65%, transparent); }
   .header__divImagen {
-    background-color: #ffff;
+    background-color: #ffffff;
     padding-left: 2.1rem;
     position: relative;
     min-width: 18.5rem; }
@@ -55,23 +55,23 @@
     margin-right: 1.5rem;
     z-index: 10; }
     .header__navBar__anchor {
-      color: #ffff;
+      color: #ffffff;
       font-size: 2rem;
       font-weight: 400;
       padding: 0.2rem 0.6rem; }
       .header__navBar__anchor:hover {
-        background-color: #72b6ca;
+        background-color: #72b5ca;
         border: none;
         border-radius: 9px; }
     .header__navBar .linkActive {
-      background-color: #72b6ca;
+      background-color: #72b5ca;
       border: none;
       border-radius: 9px; }
     .header__navBar__item {
       display: inline;
       margin-left: 3rem; }
       .header__navBar__item .anchorContacto {
-        border: 2px solid #ffff;
+        border: 2px solid #ffffff;
         padding: 0.2rem 0.6rem;
         border-radius: 9px; }
 
@@ -83,7 +83,6 @@
   margin: 15vh 0 11vh 1rem;
   width: 40%;
   height: 74vh;
-  z-index: 1;
   align-items: flex-start;
   justify-content: center; }
   .divPrueba .h1 {
@@ -112,13 +111,13 @@
     padding: 0.8rem 2.5rem;
     border: none;
     background-color: #0199c8;
-    color: #ffff;
+    color: #ffffff;
     align-self: center; }
     .divPrueba .btnDonar:hover {
       cursor: pointer;
-      background-color: #72b6ca; }
+      background-color: #72b5ca; }
     .divPrueba .btnDonar__a {
-      color: #ffff; }
+      color: #ffffff; }
 
 @keyframes submenu {
   from {
@@ -133,7 +132,7 @@
   height: 9rem;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to bottom, #ffff 65%, transparent);
+  background: linear-gradient(to bottom, #ffffff 65%, transparent);
   z-index: 2; }
   .headerDos__divImagen {
     margin-left: 2.1rem; }
@@ -205,13 +204,13 @@
     padding: 0.8rem 2.5rem;
     border: none;
     background-color: #0199c8;
-    color: #ffff;
+    color: #ffffff;
     align-self: center; }
     .divPrueba .btnDonar:hover {
       cursor: pointer;
-      background-color: #72b6ca; }
+      background-color: #72b5ca; }
     .divPrueba .btnDonar__a {
-      color: #ffff; }
+      color: #ffffff; }
 
 .mainIndex {
   padding-top: 0;
@@ -228,13 +227,13 @@ main {
 .fondo {
   background-color: #0199c8;
   height: 100vh;
-  justify-content: center;
-  overflow-y: scroll; }
+  min-height: 840px;
+  overflow-y: scroll;
+  justify-content: center; }
   .fondo .main__QS {
     padding: 0 2rem 0 2rem;
     background-color: #0199c8;
-    padding-top: 1rem;
-    color: #ffff;
+    color: #ffffff;
     justify-content: center;
     align-items: center;
     text-align: left; }
@@ -256,10 +255,11 @@ main {
       align-self: flex-start; }
 
 .main__Proyectos {
-  padding: 8rem 2rem 0 2rem;
-  color: #ffff; }
+  padding: 0rem 2rem 0 2rem;
+  color: #ffffff; }
   .main__Proyectos section {
-    justify-content: center; }
+    justify-content: center;
+    margin-top: 12rem; }
     .main__Proyectos section h1 {
       font-weight: 700;
       font-size: 70px;
@@ -278,13 +278,15 @@ main {
 
 .divContainer {
   height: 100vh;
+  min-height: 840px;
+  overflow-y: scroll;
   justify-content: center;
   align-items: center;
   background-color: white;
   padding-top: 0; }
 
 .mainColabora {
-  background-color: #ffff;
+  background-color: #ffffff;
   align-items: center;
   padding-left: 2rem;
   padding-right: 2rem; }
@@ -318,7 +320,7 @@ main {
     font-weight: 700;
     font-size: 25px;
     line-height: 34px;
-    color: #ffff;
+    color: #ffffff;
     text-align: center;
     letter-spacing: -0.3px;
     margin: 0 2rem; }
@@ -330,7 +332,10 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffff;
+  color: #ffffff;
+  height: 100vh;
+  min-height: 900px;
+  overflow-y: scroll;
   padding-right: 2rem;
   padding-left: 2rem; }
   .main__Contactos .h1__Contactos {
@@ -380,7 +385,7 @@ main {
   position: fixed;
   background-color: #0199c8;
   padding-top: 8rem;
-  color: #ffff; }
+  color: #ffffff; }
 
 @media only screen and (max-width: 1650px) {
   .header, .headerDos {
@@ -404,10 +409,16 @@ main {
   .divPrueba .btnDonar {
     font-size: 2rem;
     margin-right: 20%; }
-  .main__Proyectos {
-    padding: 6rem 2rem 0 2rem; }
-  .fondo .main__QS img {
-    width: 600px; } }
+  .main__Proyectos section {
+    margin-top: 10rem; }
+  .fondo {
+    min-height: 800px; }
+    .fondo .main__QS img {
+      width: 600px; }
+  .divContainer {
+    min-height: 700px; }
+  .main__Contactos {
+    min-height: 800px; } }
 
 @media only screen and (max-width: 1245px) {
   .header__navBar__anchor, .headerDos__navBar__anchor {
@@ -427,18 +438,20 @@ main {
     max-width: 25rem; }
   .divPrueba .btnDonar {
     font-size: 1.6rem; }
-  .fondo .main__QS img {
-    width: 540px; }
-  .fondo .main__QS p {
-    font-size: 18px;
-    line-height: 23px; }
-  .fondo .main__QS .titulo__main {
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 50px; }
-  .fondo .main__QS__texto {
-    justify-content: center;
-    align-items: center; } }
+  .fondo {
+    min-height: 700px; }
+    .fondo .main__QS img {
+      width: 540px; }
+    .fondo .main__QS p {
+      font-size: 18px;
+      line-height: 23px; }
+    .fondo .main__QS .titulo__main {
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 50px; }
+    .fondo .main__QS__texto {
+      justify-content: center;
+      align-items: center; } }
 
 @media only screen and (max-width: 1020px) {
   .header__navBar__anchor, .headerDos__navBar__anchor {
@@ -457,6 +470,8 @@ main {
   .fondo .main__QS__texto {
     justify-content: center;
     align-items: center; }
+  .divContainer {
+    min-height: 600px; }
   .mainColabora h1 {
     font-size: 50px;
     line-height: 72px; }
@@ -488,17 +503,19 @@ main {
   .divPrueba .btnDonar {
     font-size: 1.6rem;
     align-self: flex-start; }
-  .fondo .main__QS img {
-    width: 380px; }
-  .fondo .main__QS p {
-    font-size: 14px;
-    line-height: 20px; }
-  .fondo .main__QS .titulo__main {
-    font-size: 42px;
-    line-height: 45px; }
-  .fondo .main__QS__texto {
-    justify-content: center;
-    align-items: center; }
+  .fondo {
+    min-height: 600px; }
+    .fondo .main__QS img {
+      width: 380px; }
+    .fondo .main__QS p {
+      font-size: 14px;
+      line-height: 20px; }
+    .fondo .main__QS .titulo__main {
+      font-size: 42px;
+      line-height: 45px; }
+    .fondo .main__QS__texto {
+      justify-content: center;
+      align-items: center; }
   .main__Proyectos section h1 {
     font-size: 50px;
     line-height: 55px; }
@@ -511,29 +528,31 @@ main {
     line-height: 27px; }
   .main__Proyectos section img {
     margin: 2rem 0 4rem 0; }
-  .main__Contactos .h1__Contactos {
-    font-size: 45px;
-    line-height: 48px; }
-  .main__Contactos h3 {
-    font-size: 22px;
-    line-height: 30px;
-    padding-top: 15px; }
-  .main__Contactos p {
-    font-size: 25px;
-    line-height: 30px; }
-  .main__Contactos .main__info {
-    padding-top: 30px; }
-  .main__Contactos .sectionRS h2 {
-    font-size: 38px;
-    line-height: 42px;
-    padding-top: 25px; }
-  .main__Contactos .sectionRS__icons {
-    padding-top: 10px; }
-    .main__Contactos .sectionRS__icons .faceItem {
-      width: 4.5rem; }
-    .main__Contactos .sectionRS__icons .igItem {
-      width: 3rem;
-      height: 3rem; } }
+  .main__Contactos {
+    min-height: 700px; }
+    .main__Contactos .h1__Contactos {
+      font-size: 45px;
+      line-height: 48px; }
+    .main__Contactos h3 {
+      font-size: 22px;
+      line-height: 30px;
+      padding-top: 15px; }
+    .main__Contactos p {
+      font-size: 25px;
+      line-height: 30px; }
+    .main__Contactos .main__info {
+      padding-top: 30px; }
+    .main__Contactos .sectionRS h2 {
+      font-size: 38px;
+      line-height: 42px;
+      padding-top: 25px; }
+    .main__Contactos .sectionRS__icons {
+      padding-top: 10px; }
+      .main__Contactos .sectionRS__icons .faceItem {
+        width: 4.5rem; }
+      .main__Contactos .sectionRS__icons .igItem {
+        width: 3rem;
+        height: 3rem; } }
 
 @media only screen and (max-width: 800px) {
   .header, .headerDos {
@@ -555,19 +574,27 @@ main {
     margin-bottom: 20px; }
   .divPrueba .btnDonar {
     font-size: 1.2rem; }
-  .fondo .main__QS img {
-    width: 330px; }
-  .fondo .main__QS p {
-    font-size: 13px;
-    line-height: 20px; }
-  .fondo .main__QS .titulo__main {
-    font-size: 38px;
-    line-height: 45px; }
-  .fondo .main__QS__texto {
-    justify-content: center;
-    align-items: center; }
+  .fondo {
+    min-height: 550px; }
+    .fondo .main__QS img {
+      width: 330px; }
+    .fondo .main__QS p {
+      font-size: 13px;
+      line-height: 20px; }
+    .fondo .main__QS .titulo__main {
+      font-size: 38px;
+      line-height: 45px; }
+    .fondo .main__QS__texto {
+      justify-content: center;
+      align-items: center; }
   .main__Proyectos {
-    padding: 5rem 2rem 0 2rem; } }
+    padding: 0 2rem 0 2rem; }
+    .main__Proyectos section {
+      margin-top: 7rem; }
+  .divContainer {
+    min-height: 500px; }
+  .main__Contactos {
+    min-height: 600px; } }
 
 @media only screen and (max-width: 710px) {
   .header__navBar {
@@ -593,7 +620,7 @@ main {
       color: white;
       font-size: 1.6rem; }
       .header__navBar__anchor:active, .header__navBar__anchor:hover {
-        color: #ffff;
+        color: #ffffff;
         transition: .3s; }
   .headerDos__navBar {
     position: fixed;
@@ -601,7 +628,7 @@ main {
     width: 17rem;
     top: 3.8rem;
     right: -1.5rem;
-    background: #ffff;
+    background: #ffffff;
     text-align: center;
     transition: all .5s;
     justify-content: center;
@@ -648,21 +675,25 @@ main {
     margin-left: 0.2rem; }
   .header__divImagen .logoHeader__div__img, .headerDos__divImagen .logoHeader__div__img {
     width: 7rem; }
-  .fondo .main__QS {
-    flex-direction: column; }
-    .fondo .main__QS img {
-      width: 380px; }
-    .fondo .main__QS p {
-      font-size: 12px;
-      line-height: 20px; }
-    .fondo .main__QS .titulo__main {
-      font-size: 38px;
-      line-height: 40px;
-      align-self: center; }
-    .fondo .main__QS__texto {
-      justify-content: center;
-      align-items: center;
-      text-align: center; }
+  .fondo {
+    min-height: 700px; }
+    .fondo .main__QS {
+      flex-direction: column; }
+      .fondo .main__QS img {
+        width: 380px; }
+      .fondo .main__QS p {
+        font-size: 12px;
+        line-height: 20px; }
+      .fondo .main__QS .titulo__main {
+        font-size: 38px;
+        line-height: 40px;
+        align-self: center; }
+      .fondo .main__QS__texto {
+        justify-content: center;
+        align-items: center;
+        text-align: center; }
+  .divContainer {
+    min-height: 350px; }
   .mainColabora h1 {
     font-size: 30px;
     line-height: 30px; }
@@ -705,8 +736,12 @@ main {
       height: 9rem; } } }
 
 @media only screen and (max-width: 425px) {
-  .fondo .main__QS img {
-    width: 300px; }
+  .fondo {
+    min-height: 800px; }
+    .fondo .main__QS img {
+      width: 300px; }
+  .divContainer {
+    min-height: 300px; }
   .mainColabora h1 {
     font-size: 22px;
     line-height: 24px; }

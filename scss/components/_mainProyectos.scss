@@ -1,11 +1,12 @@
 .main__Proyectos{
     @extend %flexboxColumn;
-    padding: 8rem 2rem 0 2rem;
+    padding: 0rem 2rem 0 2rem;
     color:$colorSecundario;
 
     section{
         @extend %flexboxColumn;
         justify-content: center;
+        margin-top: 12rem;
 
         h1{
             // font-weight: 600;

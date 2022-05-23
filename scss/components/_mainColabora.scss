@@ -1,6 +1,8 @@
 .divContainer{
     height: 100vh;
     @extend %flexboxColumn;
+    min-height: 840px;
+    overflow-y: scroll;
     justify-content: center;
     align-items: center;
     background-color: white;
@@ -11,6 +13,7 @@
     background-color: $colorSecundario;
     @extend %flexboxColumn;
     align-items: center;
+    // margin-top: 12rem;
     padding-left: 2rem;
     padding-right: 2rem;
 

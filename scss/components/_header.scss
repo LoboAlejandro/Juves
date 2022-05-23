@@ -24,6 +24,8 @@
             max-height: 175vh;
             height: 175vh;
             min-height: 60rem;
+            // min-height: 680px;
+            // overflow-y: scroll;
             // min-width: 120rem;
             // height: 170vh;
             top: -20rem;
@@ -165,8 +167,11 @@
     margin: 15vh 0 11vh 1rem;
     width: 40%;
     height: 74vh;
+    // min-height: 680px;
+    // overflow-y: scroll;
     // background-color: gray;
-    z-index: 1;
+    // z-index: 1;
+
 
     @extend %flexboxColumn;
     align-items: flex-start;

@@ -4,7 +4,11 @@
     justify-content:center;
     align-items:center;
     color:$colorSecundario;
+    height: 100vh;
+    min-height: 900px;
+    overflow-y: scroll;
     // padding-top: 130px;
+    // margin-top: 12rem;
     padding-right: 2rem;
     padding-left: 2rem;
     

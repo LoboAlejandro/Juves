@@ -2,14 +2,16 @@
     background-color: $colorPrincipal;
     @extend %flexboxColumn;
     height: 100vh;
-    justify-content: center;
+    min-height: 840px;
     overflow-y: scroll;
-    
+    justify-content: center;
+
     .main__QS{ 
         @extend %flexboxRow;
+        // margin-top: 12rem;
         padding: 0 2rem 0 2rem;
         background-color: $colorPrincipal;
-        padding-top: 1rem;
+        // padding-top: 1rem;
         color:$colorSecundario;
         justify-content: center;
         align-items: center;
