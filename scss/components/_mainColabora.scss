@@ -1,3 +1,12 @@
+.divContainer{
+    height: 100vh;
+    @extend %flexboxColumn;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-top: 0;
+}
+
 .mainColabora{
     background-color: $colorSecundario;
     @extend %flexboxColumn;

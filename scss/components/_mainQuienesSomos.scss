@@ -1,6 +1,9 @@
 .fondo{
     background-color: $colorPrincipal;
     @extend %flexboxColumn;
+    height: 100vh;
+    justify-content: center;
+    overflow-y: scroll;
     
     .main__QS{ 
         @extend %flexboxRow;

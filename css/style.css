@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: row; }
 
-.divPrueba, .fondo, .fondo .main__QS__texto, .main__Proyectos, .mainColabora, .mainColabora button, .main__Contactos, .main__Contactos .sectionRS {
+.divPrueba, .fondo, .fondo .main__QS__texto, .main__Proyectos, .divContainer, .mainColabora, .mainColabora button, .main__Contactos, .main__Contactos .sectionRS {
   display: flex;
   flex-direction: column; }
 
@@ -227,7 +227,10 @@ main {
   padding-top: 8rem; }
 
 .fondo {
-  background-color: #0199c8; }
+  background-color: #0199c8;
+  height: 100vh;
+  justify-content: center;
+  overflow-y: scroll; }
   .fondo .main__QS {
     padding: 0 2rem 0 2rem;
     background-color: #0199c8;
@@ -395,6 +398,13 @@ main {
   left: 440.79px;
   bottom: 180px; }
 
+.divContainer {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding-top: 0; }
+
 .mainColabora {
   background-color: #ffff;
   align-items: center;
@@ -463,7 +473,8 @@ main {
   .main__Contactos .main__info {
     display: flex;
     justify-content: flex-start;
-    padding-top: 50px; }
+    padding-top: 50px;
+    text-align: center; }
   .main__Contactos .sectionRS {
     justify-content: center;
     align-items: center; }
@@ -471,7 +482,8 @@ main {
       font-weight: 600;
       font-size: 50px;
       line-height: 68px;
-      padding-top: 40px; }
+      padding-top: 40px;
+      text-align: center; }
     .main__Contactos .sectionRS__icons {
       padding-top: 20px;
       align-items: center;
