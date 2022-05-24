@@ -396,10 +396,8 @@ main {
       margin-left: 1rem; }
     .header__divImagen .logoHeader__img, .headerDos__divImagen .logoHeader__img {
       width: 12rem; }
-    .header__divImagen .logoHeader__div, .headerDos__divImagen .logoHeader__div {
-      margin: 19rem 0 0 94rem; }
-      .header__divImagen .logoHeader__div__img, .headerDos__divImagen .logoHeader__div__img {
-        width: 12rem; }
+    .header__divImagen .logoHeader__div__img, .headerDos__divImagen .logoHeader__div__img {
+      width: 12rem; }
   .divPrueba .h1 {
     font-size: 2.6rem; }
   .divPrueba .h2 {
@@ -423,6 +421,8 @@ main {
 @media only screen and (max-width: 1245px) {
   .header__navBar__anchor, .headerDos__navBar__anchor {
     font-size: 1.35rem; }
+  .header__divImagen .logoHeader__img, .headerDos__divImagen .logoHeader__img {
+    width: 10rem; }
   .header__divImagen .logoHeader__div__img, .headerDos__divImagen .logoHeader__div__img {
     width: 10rem; }
   .divPrueba .h1 {
@@ -492,6 +492,10 @@ main {
     margin-left: 0.2rem; }
   .header__divImagen .logoHeader__img, .headerDos__divImagen .logoHeader__img {
     width: 7rem; }
+  .header__divImagen .logoHeader__div, .headerDos__divImagen .logoHeader__div {
+    margin: 19rem 0 0 94rem; }
+    .header__divImagen .logoHeader__div__img, .headerDos__divImagen .logoHeader__div__img {
+      width: 7rem; }
   .divPrueba .h1 {
     line-height: 40px; }
   .divPrueba .h2 {

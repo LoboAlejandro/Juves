@@ -20,7 +20,7 @@
                     width: 12rem;
                 }
                 &__div{
-                    margin: 19rem 0 0 94rem;
+                    // margin: 19rem 0 0 94rem;
                     &__img{
                         width: 12rem;
                     }
@@ -114,6 +114,9 @@
 
         &__divImagen{
             .logoHeader{
+                &__img{
+                    width: 10rem;
+                }
                 &__div{
                     &__img{
                         width: 10rem;
@@ -293,7 +296,11 @@
 
         &__divImagen{
             .logoHeader{
-                // &__div{
+                &__img{
+                    width: 7rem;
+                }
+                &__div{
+                    margin: 19rem 0 0 94rem;
                     &__img{
                         width: 7rem;
                     }
@@ -319,7 +326,7 @@
                     //     }
                     // }
                 }
-            // }
+            }
         }
     }
 
