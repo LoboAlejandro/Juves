@@ -88,6 +88,11 @@
                     border: none;
                     align-self: center;
                 }
+
+                .btnForm:hover{
+                    background-color: $colorPrincipalClaro;
+                    cursor: pointer;
+                }
             }
             
         }

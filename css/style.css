@@ -117,7 +117,7 @@
     border: none;
     background-color: #0199c8;
     color: #ffffff;
-    align-self: center; }
+    align-self: flex-start; }
     .divPrueba .btnDonar:hover {
       cursor: pointer;
       background-color: #72b5ca; }
@@ -236,7 +236,7 @@
     border: none;
     background-color: #0199c8;
     color: #ffffff;
-    align-self: center; }
+    align-self: flex-start; }
     .divPrueba .btnDonar:hover {
       cursor: pointer;
       background-color: #72b5ca; }
@@ -472,6 +472,9 @@ main {
       .contDonar .contForm .btnDonar1 button:focus {
         background-color: #ccdce1;
         color: #0199c8; }
+      .contDonar .contForm .btnDonar1 button:hover {
+        background-color: #72b5ca;
+        cursor: pointer; }
     .contDonar .contForm .ulList {
       margin-top: 2rem; }
       .contDonar .contForm .ulList .list {
@@ -527,6 +530,9 @@ main {
         text-align: center;
         color: white;
         margin: 0.2rem; }
+      .contDonar .contForm .center .btnForm:hover {
+        background-color: #72b5ca;
+        cursor: pointer; }
       .contDonar .contForm .center__Section {
         justify-content: center;
         align-items: center;
@@ -597,6 +603,9 @@ main {
           padding: 0.7rem 1.5rem;
           border: none;
           align-self: center; }
+        .mainVoluntarios .sectionVoluntarios .divForm .divCheckbox .btnForm:hover {
+          background-color: #72b5ca;
+          cursor: pointer; }
 
 @media only screen and (max-width: 1650px) {
   .header, .headerDos {
@@ -617,7 +626,8 @@ main {
     font-size: 1.8rem; }
   .divPrueba .btnDonar {
     font-size: 2rem;
-    margin-right: 20%; }
+    margin-right: 20%;
+    align-self: center; }
   .main__Proyectos {
     padding: 0rem 2rem 0 2rem; }
     .main__Proyectos section {

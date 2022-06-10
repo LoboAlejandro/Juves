@@ -83,6 +83,11 @@
                 background-color: $colorSecundarioClaro;
                 color: $colorPrincipal;
             }
+
+            button:hover{
+                background-color: $colorPrincipalClaro;
+                cursor: pointer;
+            }
         }
     
         .ulList{
@@ -175,6 +180,11 @@
                 text-align: center;
                 color:white;
                 margin: 0.2rem;
+            }
+
+            .btnForm:hover{
+                background-color: $colorPrincipalClaro;
+                cursor: pointer;
             }
             
             &__Section{

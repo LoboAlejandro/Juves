@@ -111,7 +111,7 @@
         border: none;
         background-color: $colorPrincipal;
         color: $colorSecundario;
-        align-self: center;
+        align-self: flex-start;
 
         &:hover{
             cursor: pointer;
