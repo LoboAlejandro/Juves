@@ -5,11 +5,11 @@
   font-family: "Nunito", sans-serif;
   text-decoration: none; }
 
-.header, .headerDos, .fondo .main__QS, .mainColabora__divBtn, .main__Contactos .main__info, .main__Contactos .sectionRS__icons, .main__Filosofia {
+.header, .headerDos, .fondo .main__QS, .mainColabora__divBtn, .main__Contactos .main__info, .main__Contactos .sectionRS__icons, .main__Filosofia, .contDonar, .contDonar .contForm .btnDonar1, .contDonar .contForm .ulList .list, .contDonar .contForm form .formDonar div, .mainVoluntarios .sectionVoluntarios, .mainVoluntarios .sectionVoluntarios .divForm .formVoluntario div {
   display: flex;
   flex-direction: row; }
 
-.divPrueba, .fondo, .fondo .main__QS__texto, .main__Proyectos, .main__Proyectos section, .divContainer, .mainColabora, .mainColabora button, .main__Contactos, .main__Contactos .sectionRS {
+.header__navBar__item, .divPrueba, .fondo, .fondo .main__QS__texto, .main__Proyectos, .main__Proyectos section, .divContainer, .mainColabora, .mainColabora button, .main__Contactos, .main__Contactos .sectionRS, .mainDonar, .contDonar .contForm, .contDonar .contForm form .formDonar, .contDonar .contForm .center__Section, .mainVoluntarios, .mainVoluntarios .sectionVoluntarios .divForm, .mainVoluntarios .sectionVoluntarios .divForm .formVoluntario, .mainVoluntarios .sectionVoluntarios .divForm .divCheckbox {
   display: flex;
   flex-direction: column; }
 
@@ -69,7 +69,12 @@
       border-radius: 9px; }
     .header__navBar__item {
       display: inline;
-      margin-left: 3rem; }
+      margin-left: 3rem;
+      align-items: center;
+      justify-content: center;
+      position: relative; }
+      .header__navBar__item .carett {
+        color: white; }
       .header__navBar__item .anchorContacto {
         border: 2px solid #ffffff;
         padding: 0.2rem 0.6rem;
@@ -118,6 +123,32 @@
       background-color: #72b5ca; }
     .divPrueba .btnDonar__a {
       color: #ffffff; }
+
+.submenu {
+  position: relative; }
+
+.submenu__ul {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 1.7rem;
+  left: 0;
+  width: 17rem;
+  background-color: #ccdce1;
+  border-radius: 0 0 8px 8px;
+  z-index: 10; }
+  .submenu__ul li {
+    padding: 0.4rem 0.1rem;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    border-bottom: 1px solid #0199c8;
+    color: #0199c8; }
+  .submenu__ul li:hover {
+    background-color: #72b5ca; }
+
+.submenu:hover .submenu__ul {
+  display: block; }
 
 @keyframes submenu {
   from {
@@ -255,11 +286,11 @@ main {
       align-self: flex-start; }
 
 .main__Proyectos {
-  padding: 0rem 2rem 0 2rem;
+  padding: 7rem 2rem 0 2rem;
   color: #ffffff; }
   .main__Proyectos section {
     justify-content: center;
-    margin-top: 12rem; }
+    margin-top: 1rem; }
     .main__Proyectos section h1 {
       font-weight: 700;
       font-size: 70px;
@@ -274,7 +305,14 @@ main {
       font-size: 25px;
       line-height: 34.1px; }
     .main__Proyectos section img {
-      margin: 2rem 0 7rem 0; }
+      margin: 2rem 0 2rem 0; }
+  .main__Proyectos .linkeoP1, .main__Proyectos .linkeoP2, .main__Proyectos .linkeoP3, .main__Proyectos .linkeoP4 {
+    position: relative; }
+  .main__Proyectos .linkeoH1, .main__Proyectos .linkeoH2, .main__Proyectos .linkeoH3, .main__Proyectos .linkeoH4 {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    bottom: 0; }
 
 .divContainer {
   height: 100vh;
@@ -387,6 +425,179 @@ main {
   padding-top: 8rem;
   color: #ffffff; }
 
+.mainDonar {
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  min-height: 740px;
+  overflow-y: scroll; }
+
+.contDonar {
+  margin: 0 2rem;
+  justify-content: space-between; }
+  .contDonar .conTexto {
+    margin: 1rem 0;
+    color: #0199C8; }
+    .contDonar .conTexto h1 {
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 55px;
+      margin-bottom: 2.5rem; }
+    .contDonar .conTexto p {
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 60px; }
+  .contDonar .contForm {
+    align-items: center;
+    color: #0199C8;
+    width: 51rem; }
+    .contDonar .contForm h2 {
+      font-weight: 700;
+      font-size: 32px; }
+    .contDonar .contForm .btnDonar1 {
+      justify-content: center;
+      flex-wrap: wrap; }
+      .contDonar .contForm .btnDonar1 button {
+        background-color: #0199C8;
+        font-weight: 400;
+        font-size: 25px;
+        padding: 0.7rem 1.5rem;
+        border: none;
+        border-radius: 9px;
+        text-align: center;
+        color: white;
+        margin: 0.2rem; }
+      .contDonar .contForm .btnDonar1 button:focus {
+        background-color: #ccdce1;
+        color: #0199c8; }
+    .contDonar .contForm .ulList {
+      margin-top: 2rem; }
+      .contDonar .contForm .ulList .list {
+        text-decoration: none;
+        list-style-type: none;
+        padding: 0.7rem; }
+        .contDonar .contForm .ulList .list li {
+          font-size: 25px;
+          border: none; }
+          .contDonar .contForm .ulList .list li a {
+            color: #5a5f61; }
+        .contDonar .contForm .ulList .list .listActive {
+          padding: 0.7rem;
+          border-left: 0.3rem solid #0199c8;
+          border-top: 0.3rem solid #0199c8;
+          border-right: 0.3rem solid #0199c8; }
+          .contDonar .contForm .ulList .list .listActive a {
+            font-weight: 700;
+            color: #0199c8; }
+        .contDonar .contForm .ulList .list .listNoActive {
+          border-bottom: 0.3rem solid #0199c8; }
+        .contDonar .contForm .ulList .list .listMedio {
+          padding: 0.7rem 1.2rem; }
+    .contDonar .contForm form {
+      width: 96%; }
+      .contDonar .contForm form .formDonar {
+        margin-top: 2rem;
+        border-radius: 5px;
+        border-color: #0199C8;
+        padding-bottom: 1rem;
+        width: 100%; }
+        .contDonar .contForm form .formDonar div {
+          margin: 0.8rem 0;
+          font-weight: 700;
+          font-size: 30px;
+          width: 100%;
+          justify-content: space-between; }
+          .contDonar .contForm form .formDonar div input {
+            width: 33rem;
+            border-radius: 8px;
+            border: 3px solid #0199c8; }
+    .contDonar .contForm .center {
+      margin-top: 1rem;
+      text-align: center; }
+      .contDonar .contForm .center .btnForm {
+        margin-bottom: 1rem;
+        background-color: #0199C8;
+        font-weight: 400;
+        font-size: 25px;
+        padding: 0.7rem 1.5rem;
+        border: none;
+        border-radius: 9px;
+        text-align: center;
+        color: white;
+        margin: 0.2rem; }
+      .contDonar .contForm .center__Section {
+        justify-content: center;
+        align-items: center;
+        text-align: left; }
+        .contDonar .contForm .center__Section .list {
+          list-style-type: disc;
+          color: #0199c8;
+          text-align: left;
+          font-size: 19px;
+          line-height: 32px; }
+
+.padding {
+  padding-bottom: 10rem; }
+
+.mainVoluntarios {
+  justify-content: center;
+  align-items: center;
+  min-height: 750px;
+  overflow-y: scroll;
+  height: 100vh;
+  background-color: white;
+  color: #0199c8;
+  width: 100%;
+  justify-content: center; }
+  .mainVoluntarios .sectionVoluntarios {
+    justify-content: space-between;
+    margin: 0 2rem; }
+    .mainVoluntarios .sectionVoluntarios .divTexto h1 {
+      margin-bottom: 0.7rem;
+      font-size: 30px; }
+    .mainVoluntarios .sectionVoluntarios .divTexto p {
+      font-size: 20px;
+      line-height: 38px; }
+    .mainVoluntarios .sectionVoluntarios .divForm {
+      align-items: center;
+      width: fit-content;
+      margin-left: 5rem; }
+      .mainVoluntarios .sectionVoluntarios .divForm h1 {
+        font-size: 30px;
+        margin-bottom: 0.7rem; }
+      .mainVoluntarios .sectionVoluntarios .divForm h2 {
+        align-self: flex-start;
+        font-size: 25px;
+        font-weight: 400;
+        margin-bottom: 0.5rem; }
+      .mainVoluntarios .sectionVoluntarios .divForm .formVoluntario {
+        width: 100%; }
+        .mainVoluntarios .sectionVoluntarios .divForm .formVoluntario div {
+          justify-content: space-between;
+          font-size: 22px;
+          margin: 0.3rem 0;
+          width: 100%; }
+          .mainVoluntarios .sectionVoluntarios .divForm .formVoluntario div input {
+            border-radius: 6px;
+            width: 20rem;
+            border: 2px solid #0199c8; }
+      .mainVoluntarios .sectionVoluntarios .divForm .divCheckbox {
+        margin-top: 1rem; }
+        .mainVoluntarios .sectionVoluntarios .divForm .divCheckbox div {
+          margin: 0.4rem 0; }
+        .mainVoluntarios .sectionVoluntarios .divForm .divCheckbox .btnForm {
+          margin-top: 1.5rem;
+          font-weight: 400;
+          font-size: 1rem;
+          border-radius: 10px;
+          color: #ffffff;
+          background-color: #0199c8;
+          padding: 0.7rem 1.5rem;
+          border: none;
+          align-self: center; }
+
 @media only screen and (max-width: 1650px) {
   .header, .headerDos {
     height: 7rem; }
@@ -407,8 +618,10 @@ main {
   .divPrueba .btnDonar {
     font-size: 2rem;
     margin-right: 20%; }
-  .main__Proyectos section {
-    margin-top: 10rem; }
+  .main__Proyectos {
+    padding: 0rem 2rem 0 2rem; }
+    .main__Proyectos section {
+      margin-top: 10rem; }
   .fondo {
     min-height: 800px; }
     .fondo .main__QS img {
@@ -451,7 +664,14 @@ main {
       line-height: 50px; }
     .fondo .main__QS__texto {
       justify-content: center;
-      align-items: center; } }
+      align-items: center; }
+  .mainDonar {
+    min-height: 1070px; }
+  .contDonar {
+    flex-direction: column;
+    align-items: center; }
+    .contDonar .conTexto {
+      text-align: center; } }
 
 @media only screen and (max-width: 1020px) {
   .header__navBar__anchor, .headerDos__navBar__anchor {
@@ -483,7 +703,24 @@ main {
     height: 160px;
     width: 275px;
     font-size: 19px;
-    border-radius: 33px; } }
+    border-radius: 33px; }
+  .mainVoluntarios {
+    min-height: 650px; }
+    .mainVoluntarios .sectionVoluntarios .divTexto h1 {
+      font-size: 20px; }
+    .mainVoluntarios .sectionVoluntarios .divTexto p {
+      font-size: 14px;
+      line-height: 28px; }
+    .mainVoluntarios .sectionVoluntarios .divForm h1 {
+      font-size: 20px; }
+    .mainVoluntarios .sectionVoluntarios .divForm h2 {
+      font-size: 15px; }
+    .mainVoluntarios .sectionVoluntarios .divForm .formVoluntario div {
+      font-size: 15px; }
+      .mainVoluntarios .sectionVoluntarios .divForm .formVoluntario div input {
+        width: 14rem; }
+    .mainVoluntarios .sectionVoluntarios .divForm .divCheckbox div {
+      font-size: 15px; } }
 
 @media only screen and (max-width: 890px) {
   .header__navBar__anchor, .headerDos__navBar__anchor {
@@ -520,18 +757,22 @@ main {
     .fondo .main__QS__texto {
       justify-content: center;
       align-items: center; }
-  .main__Proyectos section h1 {
-    font-size: 50px;
-    line-height: 55px; }
-  .main__Proyectos section h3 {
-    font-size: 30px;
-    line-height: 35px;
-    margin-bottom: 0.5rem; }
-  .main__Proyectos section p {
-    font-size: 22px;
-    line-height: 27px; }
-  .main__Proyectos section img {
-    margin: 2rem 0 4rem 0; }
+  .main__Proyectos {
+    padding-top: 6rem; }
+    .main__Proyectos section {
+      margin-top: 1rem; }
+      .main__Proyectos section h1 {
+        font-size: 50px;
+        line-height: 55px; }
+      .main__Proyectos section h3 {
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 0.5rem; }
+      .main__Proyectos section p {
+        font-size: 22px;
+        line-height: 27px; }
+      .main__Proyectos section img {
+        margin: 2rem 0 4rem 0; }
   .main__Contactos {
     min-height: 700px; }
     .main__Contactos .h1__Contactos {
@@ -556,7 +797,21 @@ main {
         width: 4.5rem; }
       .main__Contactos .sectionRS__icons .igItem {
         width: 3rem;
-        height: 3rem; } }
+        height: 3rem; }
+  .mainDonar {
+    min-height: 960px; }
+  .contDonar {
+    flex-direction: column;
+    align-items: center; }
+    .contDonar .conTexto {
+      text-align: center; }
+      .contDonar .conTexto h1 {
+        font-size: 40px;
+        line-height: 45px;
+        margin-bottom: 1.5rem; }
+      .contDonar .conTexto p {
+        font-size: 25px;
+        line-height: 40px; } }
 
 @media only screen and (max-width: 800px) {
   .header, .headerDos {
@@ -592,13 +847,25 @@ main {
       justify-content: center;
       align-items: center; }
   .main__Proyectos {
-    padding: 0 2rem 0 2rem; }
+    padding: 5rem 2rem 0 2rem; }
     .main__Proyectos section {
-      margin-top: 7rem; }
+      margin-top: 1rem; }
   .divContainer {
     min-height: 500px; }
   .main__Contactos {
-    min-height: 600px; } }
+    min-height: 600px; }
+  .contDonar .contForm {
+    width: 37rem; }
+    .contDonar .contForm h2 {
+      font-size: 25px; }
+    .contDonar .contForm .btnDonar1 button {
+      font-size: 20px; }
+    .contDonar .contForm .ulList .list li {
+      font-size: 20px; }
+    .contDonar .contForm form .formDonar div {
+      font-size: 25px; }
+      .contDonar .contForm form .formDonar div input {
+        width: 24rem; } }
 
 @media only screen and (max-width: 710px) {
   .header__navBar {
@@ -626,6 +893,8 @@ main {
       .header__navBar__anchor:active, .header__navBar__anchor:hover {
         color: #ffffff;
         transition: .3s; }
+  .submenu__ul {
+    top: 2.5rem; }
   .headerDos__navBar {
     position: fixed;
     display: none;
@@ -733,6 +1002,54 @@ main {
     text-align: center; }
   .main__Contactos .sectionRS__icons {
     padding-top: 5px; }
+  .mainDonar {
+    min-height: 910px; }
+  .contDonar .conTexto h1 {
+    font-size: 32px;
+    line-height: 37px;
+    margin-bottom: 1rem; }
+  .contDonar .conTexto p {
+    font-size: 20px;
+    line-height: 30px; }
+  .contDonar .contForm {
+    width: 22.5rem; }
+    .contDonar .contForm h2 {
+      font-size: 20px; }
+    .contDonar .contForm .btnDonar1 button {
+      font-size: 16px;
+      margin: 0.2rem 0; }
+    .contDonar .contForm .ulList .list li {
+      font-size: 12px; }
+    .contDonar .contForm form .formDonar div {
+      margin: 0.5rem 0;
+      font-size: 14px; }
+      .contDonar .contForm form .formDonar div input {
+        width: 14rem; }
+  .mainVoluntarios {
+    min-height: 940px; }
+    .mainVoluntarios .sectionVoluntarios {
+      flex-direction: column; }
+      .mainVoluntarios .sectionVoluntarios .divTexto h1 {
+        font-size: 20px; }
+      .mainVoluntarios .sectionVoluntarios .divTexto p {
+        font-size: 14px;
+        line-height: 28px; }
+      .mainVoluntarios .sectionVoluntarios .divForm {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 1.5rem; }
+        .mainVoluntarios .sectionVoluntarios .divForm h1 {
+          font-size: 20px; }
+        .mainVoluntarios .sectionVoluntarios .divForm h2 {
+          font-size: 15px; }
+        .mainVoluntarios .sectionVoluntarios .divForm .formVoluntario div {
+          font-size: 15px; }
+          .mainVoluntarios .sectionVoluntarios .divForm .formVoluntario div input {
+            width: 14rem; }
+        .mainVoluntarios .sectionVoluntarios .divForm .divCheckbox div {
+          font-size: 15px; }
   @keyframes submenu {
     from {
       height: 0; }
@@ -790,4 +1107,31 @@ main {
     line-height: 30px;
     padding-top: 15px; }
   .main__Contactos .sectionRS__icons {
-    padding-top: 0px; } }
+    padding-top: 0px; }
+  .mainDonar {
+    min-height: 890px;
+    width: 100vw; }
+  .contDonar .conTexto h1 {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 1rem; }
+  .contDonar .conTexto p {
+    font-size: 18px;
+    line-height: 30px; }
+  .contDonar .contForm {
+    width: 17rem; }
+    .contDonar .contForm h2 {
+      font-size: 18px; }
+    .contDonar .contForm .btnDonar1 button {
+      font-size: 14px; }
+    .contDonar .contForm .ulList .list li {
+      font-size: 12px; }
+    .contDonar .contForm form .formDonar div {
+      margin: 0.5rem 0;
+      font-size: 14px; }
+      .contDonar .contForm form .formDonar div input {
+        width: 10rem; }
+  .mainVoluntarios {
+    min-height: 1150px; }
+    .mainVoluntarios .sectionVoluntarios .divForm .formVoluntario div input {
+      width: 10rem; } }

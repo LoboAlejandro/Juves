@@ -1,12 +1,12 @@
 .main__Proyectos{
     @extend %flexboxColumn;
-    padding: 0rem 2rem 0 2rem;
+    padding: 7rem 2rem 0 2rem;
     color:$colorSecundario;
 
     section{
         @extend %flexboxColumn;
         justify-content: center;
-        margin-top: 12rem;
+        margin-top: 1rem;
 
         h1{
             // font-weight: 600;
@@ -34,9 +34,20 @@
         }
 
         img{
-            margin: 2rem 0 7rem 0;
+            margin: 2rem 0 2rem 0;
         }
 
+    }
+
+    .linkeoP1, .linkeoP2, .linkeoP3, .linkeoP4{
+        position: relative;
+    }
+
+    .linkeoH1, .linkeoH2, .linkeoH3, .linkeoH4{
+        width: 1px;
+        height: 1px;
+        position: absolute;
+        bottom: 0;
     }
 
 

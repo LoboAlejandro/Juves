@@ -141,6 +141,21 @@
         &__item{
             display: inline;
             margin-left: 3rem;
+            @extend %flexboxColumn;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            .carett{
+                color: white;
+            }
+        
+
+
+            // .submenu__ul:hover{
+            //     display: block;
+            //     position: absolute;
+            // }
 
             .anchorContacto{
                 border: 2px solid $colorSecundario;
@@ -220,6 +235,42 @@
         &__a{
             color: $colorSecundario;
         }
+    }
+}
+
+.submenu{
+    position: relative;
+}
+
+.submenu__ul{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 1.7rem;
+    left: 0;
+    width: 17rem;
+    background-color: $colorSecundarioClaro;
+    border-radius: 0 0 8px 8px;
+    z-index: 10;
+
+    li{
+        // background-color: black;
+        padding: 0.4rem 0.1rem;
+        text-decoration: none;
+        list-style-type: none;
+        text-align: center;
+        border-bottom: 1px solid $colorPrincipal;
+        color: $colorPrincipal;
+    }
+
+    li:hover{
+        background-color: $colorPrincipalClaro;
+    }
+}
+
+.submenu:hover{
+    .submenu__ul{
+        display: block;
     }
 }
 

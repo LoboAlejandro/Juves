@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="img/Juves-favicon.png" type="image/x-icon"/>
     <script src="https://kit.fontawesome.com/0eb3592e5d.js" crossorigin="anonymous"></script>
-    <title>Juves - Colabora</title>
+    <title>Juves - Dona</title>
 </head>
 <body>
     <header class="headerDos">
@@ -49,24 +50,53 @@
             </ul>
         </nav>
     </header>
-    <main class="divContainer">
-        <section class="mainColabora">
-            <h1>¿QUERÉS COLABORAR?</h1>
-            <h3>El mundo necesita más gente comprometida</h3>
-            <div class="mainColabora__divBtn">
-                <a href="donar.html">
-                    <button>
-                        <img src="img/Vector.png" alt="donar">QUIERO DONAR
-                    </button>
-                </a>
-                <a href="haztevoluntario.html">
-                    <button>
-                        <img src="img/Path.png" alt="corazon">QUIERO SER VOLUNTARIO
-                    </button>
-                </a>
+    <main class="mainDonar">
+        <div class="contDonar">
+            <div class="conTexto">
+                <h1>DONÁ AHORA</h1>
+                <p>Gracias a tu aporte, muchas personas pueden tener una mejor calidad de vida</p>
+                <p>¡Continuamos construyendo juntos un mundo más justo y solidario!</p>
             </div>
-        </section>
+            <div class="contForm">
+                <h2>¿Cuánto dinero querés donar?</h2>
+                <section class="btnDonar1">
+                    <button  href="#">$500</button>
+                    <button  href="#">$1000</button>
+                    <button  href="#">$1500</button>
+                    <button  href="#">$2000</button>
+                    <button  href="#">Otros</button>
+                </section>
+                <section  class="ulList">
+                    <ul class="list" >
+                        <li  class="list listActive"> <a href="#">Soy socio o donante</a></li>
+                        <li  class="list listMedio listNoActive"> <a  href="#"> Donar ahora</a></li>
+                        <li  class="list listNoActive"> <a  href="#">Donativo anónimo</a></li>
+                    </ul>
+                </section>
+                <form >
+                    <div class="formDonar">
+                        <div>
+                            <label for="nombre">Email:</label>
+                            <input id="nombre" type="email" required>
+                        </div>
+                        <div>
+                            <label for="nombre">Contraseña:</label>
+                            <input id="contraseña" type="password" required>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <button class="btnForm">Identificarse</button>
+                        <section class="center__Section">
+                            <ul class="">
+                                <li><a href="#" class="list">Recuperar mi contraseña</a></li>
+                                <li><a  href="#" class="list"> Regístrate ahora</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
-    <footer class="footerClaro"></footer>
+    <footer class="footerDonar"></footer>
 </body>
 </html>

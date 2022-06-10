@@ -1,0 +1,95 @@
+
+.padding{
+    padding-bottom: 10rem;
+}
+
+.mainVoluntarios{
+    @extend %flexboxColumn;
+    justify-content: center;
+    align-items: center;
+    min-height: 750px;
+    overflow-y: scroll;
+    height: 100vh;
+    background-color: white;
+    color:$colorPrincipal;
+    width:100%;
+    justify-content: center;
+
+    .sectionVoluntarios{
+        @extend %flexboxRow;
+        justify-content: space-between;
+        margin: 0 2rem;
+
+        .divTexto{
+            h1{
+                margin-bottom: 0.7rem;
+                font-size: 30px;
+            }
+
+            p{
+                font-size: 20px;
+                line-height: 38px;
+            }
+        }
+
+        .divForm{
+            @extend %flexboxColumn;
+            align-items: center;
+            width: fit-content;
+            margin-left: 5rem;
+            
+            h1{
+                font-size: 30px;
+                margin-bottom: 0.7rem;
+            }
+
+            h2{
+                align-self: flex-start;
+                font-size: 25px;
+                font-weight: 400;
+                margin-bottom: 0.5rem
+            }
+
+            .formVoluntario{
+                @extend %flexboxColumn;
+                width: 100%;
+
+                div{
+                    @extend %flexboxRow;
+                    justify-content: space-between;
+                    font-size: 22px;
+                    margin: 0.3rem 0;
+                    width: 100%;
+
+                    input{
+                        border-radius: 6px;
+                        width: 20rem;
+                        border: 2px solid $colorPrincipal;
+                    }
+                }
+            }
+
+            .divCheckbox{
+                @extend %flexboxColumn;
+                margin-top: 1rem;
+
+                div{
+                    margin: 0.4rem 0;
+                }
+                
+                .btnForm{
+                    margin-top: 1.5rem;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    border-radius: 10px;
+                    color:$colorSecundario;
+                    background-color:$colorPrincipal;
+                    padding:  0.7rem 1.5rem;
+                    border: none;
+                    align-self: center;
+                }
+            }
+            
+        }
+    }
+}

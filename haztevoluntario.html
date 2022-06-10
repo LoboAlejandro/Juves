@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="img/Juves-favicon.png" type="image/x-icon"/>
     <script src="https://kit.fontawesome.com/0eb3592e5d.js" crossorigin="anonymous"></script>
-    <title>Juves - Colabora</title>
+    <title>Juves -  Hazte Voluntario</title>
 </head>
 <body>
     <header class="headerDos">
@@ -49,24 +50,67 @@
             </ul>
         </nav>
     </header>
-    <main class="divContainer">
-        <section class="mainColabora">
-            <h1>¿QUERÉS COLABORAR?</h1>
-            <h3>El mundo necesita más gente comprometida</h3>
-            <div class="mainColabora__divBtn">
-                <a href="donar.html">
-                    <button>
-                        <img src="img/Vector.png" alt="donar">QUIERO DONAR
-                    </button>
-                </a>
-                <a href="haztevoluntario.html">
-                    <button>
-                        <img src="img/Path.png" alt="corazon">QUIERO SER VOLUNTARIO
-                    </button>
-                </a>
+    <main class="mainVoluntarios">
+        <section class="sectionVoluntarios">
+            <div class="divTexto" >
+                <h1>¿Qué se pide al voluntario de Juves?</h1>
+                <p>Esfuerzo, ilusión, alegría, creatividad.</p>
+                <p>Conocer la misión de la Organización.</p>
+                <p>Conocer las actividades que realiza para conseguir su misión.</p>
+                <p>Respetar los principios y criterios de Juves.</p>
+                <p>Compromiso y responsabilidad.</p>
+                <p>Disponibilidad para adaptarse a las necesidades de la Organización.</p>
+                <p>Tener ganas de aportar conocimientos e ideas.</p>
+                <p>Disponibilidad para trabajar en pos de los proyectos</p>
+                <p><b>¡Muchas ganas de ayudar!</b></p>
+            </div>
+            <div class="divForm">
+                <h1 >¿Te gustaría ser voluntario de Juves?</h1>
+                <h2>Contactá con nosotros</h2>
+                <form class="formVoluntario">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input id="nombre" type="text" required>
+                    </div>
+                    <div>
+                        <label for="Apellido">Apellido:</label>
+                        <input id="Apellido" type="text" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" required>
+                    </div>
+                    <div>
+                        <label for="telefono">Telefono:</label>
+                        <input id="telefono" type="number" required> 
+                    </div>
+                    <div>
+                        <label for="pais">País:</label>
+                        <input id="pais" type="text" required>
+                    </div>
+                    <div>
+                        <label for="provincias">Provincia:</label>
+                        <input id="provincias" type="text" required>
+                    </div>
+                    <div>
+                        <label for="localidad">Localidad:</label>
+                        <input id="localidad" type="text" required>
+                    </div>
+                </form>
+                <div class="divCheckbox">
+                    <div>
+                        <input class="checkboxVoluntario" id="recibirInfo" type="checkbox" name="recibir información" value="info" >
+                        <label for="recibirInfor" >Deseo recibir info. de Juves</label>
+                    </div>
+                    <div>
+                        <input class="checkboxVoluntario" id="politicas"  type="checkbox" name="politicas de privacidad" value="politicas" >
+                        <label for="politicas ">Leo y acepto la política de privacidad</label>
+                    </div>
+                    <button class="btnForm">Aceptar</button>
+                </div>
             </div>
         </section>
     </main>
-    <footer class="footerClaro"></footer>
+    <footer class="footer"></footer>
 </body>
-</html>
+</html> 
