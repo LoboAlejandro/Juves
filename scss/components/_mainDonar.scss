@@ -1,0 +1,229 @@
+// body{
+    
+//     box-sizing: border-box;
+//     background-color:white
+// }
+
+.mainDonar{
+    @extend %flexboxColumn;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    min-height: 740px;
+    overflow-y: scroll;
+}
+
+.contDonar{
+    margin: 0 2rem;
+    @extend %flexboxRow;
+    // width:fit-content;
+    // background-color:white;
+    justify-content: space-between;
+    // justify-content:space-around;
+    .conTexto{
+        // width:45%;
+        // padding-top:10rem;
+        margin:1rem 0;
+        color:#0199C8;
+        
+        h1{
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 55px;
+            margin-bottom: 2.5rem;
+        }
+        
+        p{
+            font-weight: 400;
+            font-size: 35px;
+            line-height: 60px;
+        }
+    }
+    
+    .contForm{
+        @extend %flexboxColumn;
+        align-items: center;
+        // margin-left: 10rem;
+        // width:45%;
+        // padding-top:10rem;
+        color:#0199C8;
+        width: 51rem;
+        // background-color: gray;
+        
+        h2{
+            font-weight: 700;
+            font-size: 32px;
+            // text-align: center;
+        }
+        
+        .btnDonar1{
+            @extend %flexboxRow;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            button{
+                background-color:#0199C8;
+                font-weight: 400;
+                font-size: 25px;
+                padding: 0.7rem 1.5rem;
+                border: none;
+                // height: 35px;
+                // width: 90px;
+                // left: 1603px;
+                // top: 310px;
+                border-radius: 9px;
+                text-align: center;
+                color:white;
+                margin: 0.2rem;
+            }
+        
+            button:focus{
+                background-color: $colorSecundarioClaro;
+                color: $colorPrincipal;
+            }
+        }
+    
+        .ulList{
+            // padding-bottom:0.8rem;
+            margin-top: 2rem;
+    
+            .list{
+                @extend %flexboxRow;
+                text-decoration: none;
+                list-style-type:none;
+                padding: 0.7rem;
+                // border-bottom: 0.3rem solid $colorPrincipal;
+                
+                li{
+                    font-size: 25px;
+                    border: none;
+    
+                    a{
+                        color:#5a5f61;
+                    }
+                }
+    
+                .listActive{
+                    padding: 0.7rem;
+                    border-left: 0.3rem solid $colorPrincipal;
+                    border-top: 0.3rem solid $colorPrincipal;
+                    border-right: 0.3rem solid $colorPrincipal;
+                    // border-bottom: 0.3rem solid white;
+    
+                    a{
+                        font-weight: 700;
+                        color: $colorPrincipal;
+                    }
+                }
+    
+                .listNoActive{
+                    border-bottom: 0.3rem solid $colorPrincipal;
+                }
+    
+                .listMedio{
+                    padding: 0.7rem 1.2rem;
+                }
+            }
+        }
+    
+        form{
+            width: 96%;
+    
+            .formDonar{
+                @extend %flexboxColumn;
+                margin-top: 2rem;
+                // height: 39px;
+                // width: 357px;
+                // left: 1347px;
+                // top: 471px;
+                border-radius: 5px;
+                border-color: #0199C8;
+                padding-bottom:1rem ;
+                width: 100%;
+        
+                div{
+                    margin: 0.8rem 0;
+                    font-weight: 700;
+                    font-size: 30px;
+                    width: 100%;
+                    @extend %flexboxRow;
+                    justify-content: space-between;
+    
+                    input{
+                        width: 33rem;
+                        border-radius: 8px;
+                        border: 3px solid $colorPrincipal;
+                    }
+                }
+            }
+        }
+        
+        .center{
+            margin-top: 1rem;
+            text-align: center;
+
+            .btnForm{
+                margin-bottom: 1rem;
+                background-color:#0199C8;
+                font-weight: 400;
+                font-size: 25px;
+                padding: 0.7rem 1.5rem;
+                border: none;
+                border-radius: 9px;
+                text-align: center;
+                color:white;
+                margin: 0.2rem;
+            }
+            
+            &__Section{
+                @extend %flexboxColumn;
+                justify-content: center;
+                align-items: center;
+                text-align: left;
+    
+                .list{
+                    list-style-type: disc;
+                    color: $colorPrincipal;
+                    text-align: left;
+                    font-size: 19px;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+}
+
+
+
+// .btnDonar1{
+//     padding:1rem 0;
+    
+// }
+// .border{
+//     border-bottom: 1px solid;
+//     border-right: 1px solid;
+// }
+
+
+// .bottonForm{
+    // height: 44px;
+    // width: 161px;
+    // color:white;
+    // justify-content: center;
+// }
+
+
+
+// .footerDonar{
+//     height:9rem;
+//     background: linear-gradient(to bottom, transparent, $colorPrincipal 100%);
+    
+// }
+
+
+
+
+
+

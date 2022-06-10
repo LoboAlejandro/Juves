@@ -71,7 +71,7 @@
 
     //PROYECTOS 1650px
     .main__Proyectos{
-        // padding: 0rem 2rem 0 2rem;
+        padding: 0rem 2rem 0 2rem;
 
         section{
             margin-top: 10rem;
@@ -207,6 +207,21 @@
             }
         }
     }
+
+    //DONA AHORA 1245px
+
+    .mainDonar{
+        min-height: 1070px;
+    }
+
+    .contDonar{
+        flex-direction: column;
+        align-items: center;
+
+        .conTexto{
+            text-align: center;
+        }
+    }
 }
 
 @media only screen and (max-width: 1020px){
@@ -276,6 +291,50 @@
             width: 275px;
             font-size: 19px;
             border-radius: 33px;
+        }
+    }
+
+    //Voluntario 1020px
+
+    .mainVoluntarios{
+        min-height: 650px;
+        .sectionVoluntarios{
+            .divTexto{
+                h1{
+                    font-size: 20px;
+                }
+    
+                p{
+                    font-size: 14px;
+                    line-height: 28px;
+                }
+            }
+
+            .divForm{
+                h1{
+                    font-size: 20px;
+                }
+
+                h2{
+                    font-size: 15px;
+                }
+
+                .formVoluntario{
+                    div{
+                        font-size: 15px;
+
+                        input{
+                            width: 14rem;
+                        }
+                    }
+                }
+
+                .divCheckbox{
+                    div{
+                        font-size: 15px;
+                    }
+                }
+            }
         }
     }
 }
@@ -386,7 +445,9 @@
     //PROYECTOS 890px
     
     .main__Proyectos{
+        padding-top: 6rem;
         section{
+            margin-top: 1rem;
             h1{
                 font-size: 50px;
                 line-height: 55px;
@@ -451,6 +512,32 @@
                     width: 3rem;
                     height: 3rem;
                 }
+            }
+        }
+    }
+
+    //DONA AHORA 890px
+
+    .mainDonar{
+        min-height: 960px;
+    }
+
+    .contDonar{
+        flex-direction: column;
+        align-items: center;
+
+        .conTexto{
+            text-align: center;
+
+            h1{
+                font-size: 40px;
+                line-height: 45px;
+                margin-bottom: 1.5rem;
+            }
+            
+            p{
+                font-size: 25px;
+                line-height: 40px;
             }
         }
     }
@@ -555,10 +642,10 @@
     //PROYECTOS 800px
 
     .main__Proyectos{
-        padding: 0 2rem 0 2rem;
+        padding: 5rem 2rem 0 2rem;
 
         section{
-            margin-top: 7rem;
+            margin-top: 1rem;
         }
     }
 
@@ -572,6 +659,43 @@
 
     .main__Contactos{
         min-height: 600px;
+    }
+
+    //DONA AHORA 800px
+
+    .contDonar{
+        .contForm{
+            width: 37rem;
+            h2{
+                font-size: 25px;
+            }
+
+            .btnDonar1{
+                button{
+                    font-size: 20px;
+                }
+            }
+
+            .ulList{
+                .list{
+                    li{
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            form{
+                .formDonar{
+                    div{
+                        font-size: 25px;
+
+                        input{
+                            width: 24rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -612,6 +736,10 @@
                 transition: .3s;
             }
         }
+
+    }
+    .submenu__ul{
+        top: 2.5rem;
     }
 
     .headerDos__navBar{
@@ -745,7 +873,6 @@
         }
     }
 
-
     //COLABORA 710px
 
     .divContainer{
@@ -814,6 +941,112 @@
     
             &__icons{
                 padding-top: 5px;
+            }
+        }
+    }
+
+    //DONA AHORA 710px
+
+    .mainDonar{
+        min-height: 910px;
+    }
+
+    .contDonar{
+        .conTexto{
+            h1{
+                font-size: 32px;
+                line-height: 37px;
+                margin-bottom: 1rem;
+            }
+            
+            p{
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+
+        .contForm{
+            width: 22.5rem;
+            h2{
+                font-size: 20px;
+            }
+
+            .btnDonar1{
+                button{
+                    font-size: 16px;
+                    margin: 0.2rem 0;
+                }
+            }
+
+            .ulList{
+                .list{
+                    li{
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            form{
+                .formDonar{
+                    div{
+                        margin: 0.5rem 0;
+                        font-size: 14px;
+
+                        input{
+                            width: 14rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //Voluntario 710px
+
+    .mainVoluntarios{
+        min-height: 940px;
+        .sectionVoluntarios{
+            flex-direction: column;
+            .divTexto{
+                h1{
+                    font-size: 20px;
+                }
+    
+                p{
+                    font-size: 14px;
+                    line-height: 28px;
+                }
+            }
+
+            .divForm{
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                margin-left: 0;
+                margin-top: 1.5rem;
+                h1{
+                    font-size: 20px;
+                }
+
+                h2{
+                    font-size: 15px;
+                }
+
+                .formVoluntario{
+                    div{
+                        font-size: 15px;
+
+                        input{
+                            width: 14rem;
+                        }
+                    }
+                }
+
+                .divCheckbox{
+                    div{
+                        font-size: 15px;
+                    }
+                }
             }
         }
     }
@@ -927,6 +1160,78 @@
     
             &__icons{
                 padding-top: 0px;
+            }
+        }
+    }
+
+    //DONA AHORA 425px
+
+    .mainDonar{
+        min-height: 890px;
+        width: 100vw;
+    }
+
+    .contDonar{
+        .conTexto{
+            h1{
+                font-size: 30px;
+                line-height: 35px;
+                margin-bottom: 1rem;
+            }
+            
+            p{
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+        .contForm{
+            width: 17rem;
+            h2{
+                font-size: 18px;
+            }
+
+            .btnDonar1{
+                button{
+                    font-size: 14px;
+                }
+            }
+
+            .ulList{
+                .list{
+                    li{
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            form{
+                .formDonar{
+                    div{
+                        margin: 0.5rem 0;
+                        font-size: 14px;
+
+                        input{
+                            width: 10rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //Voluntario 425px
+
+    .mainVoluntarios{
+        min-height: 1150px;
+        .sectionVoluntarios{
+            .divForm{
+                .formVoluntario{
+                    div{
+                        input{
+                            width: 10rem;
+                        }
+                    }
+                }
             }
         }
     }
