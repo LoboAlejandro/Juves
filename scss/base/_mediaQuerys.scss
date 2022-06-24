@@ -557,7 +557,8 @@
                     // margin: 19rem 0 0 101rem;
                     &__img{
                         background-color: white;
-                        border-radius: 10px;
+                        border-radius: 6px;
+                        padding: 0.3rem;
                     }
 
                     // &__contenido{
@@ -835,11 +836,43 @@
         
         &__divImagen{
             .logoHeader{
+                background-color: transparent;
                 &__div{
                     &__img{
                         width: 7rem;
                     }
                 }
+            }
+        }
+    }
+
+    //MAIN INDEX 710px
+
+    .mainIndex{
+        background-color: white;
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 550px;
+        overflow-y: scroll;
+        height: 100vh;
+        height: 100vh;
+        width: 100vw;
+        .divPrueba{
+            margin: 0;
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+
+            .btnDonar{
+                align-self: center;
+                margin: 0;
             }
         }
     }
