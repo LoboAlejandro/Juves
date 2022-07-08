@@ -469,6 +469,10 @@
                 margin: 2rem 0 4rem 0;
             }
         }
+        
+        .linkeoH1, .linkeoH2, .linkeoH3, .linkeoH4{
+            bottom: 6rem;
+        }
     }
 
     //CONTACTO 890px
@@ -824,6 +828,7 @@
     }
 
     .header, .headerDos{
+        z-index: 10;
         &__navBar{
             &__anchor{
                 font-size: 1.8rem;
