@@ -947,6 +947,8 @@ main {
     color: #0199c8; }
   .bar-btn i, .bar-btnDos i {
     transition: all 120ms; }
+  #check:checked ~ .header {
+    z-index: 10; }
   #check:checked ~ .bar-btn i, #check:checked ~ .bar-btnDos i {
     transform: rotateZ(-90deg); }
   #check:checked ~ ul {
@@ -960,15 +962,26 @@ main {
   .header, .headerDos {
     z-index: 10; }
     .header__navBar__anchor, .headerDos__navBar__anchor {
-      font-size: 1.8rem; }
+      font-size: 1.8rem;
+      z-index: 100; }
     .header__navBar__item, .headerDos__navBar__item {
       margin-left: 0.2rem; }
     .header__divImagen .logoHeader, .headerDos__divImagen .logoHeader {
       background-color: transparent; }
       .header__divImagen .logoHeader__div__img, .headerDos__divImagen .logoHeader__div__img {
         width: 7rem; }
+  .header__divImagen .logoHeader {
+    max-width: 0;
+    width: 0;
+    min-width: 0;
+    max-height: 0;
+    height: 0;
+    min-height: 0;
+    top: -20rem;
+    left: -92rem;
+    border-radius: 50%; }
   .mainIndex {
-    background-color: white;
+    background-color: transparent;
     background-image: none;
     display: flex;
     flex-direction: column;
