@@ -66,12 +66,9 @@
 
 .divPrueba{
     position: absolute;
-    // margin-top: 13vh;
-    // margin-bottom: 11vh;
     margin: 15vh 0 11vh 1rem;
     width: 40%;
     height: 74vh;
-    // background-color: gray;
     z-index: 1;
 
     @extend %flexboxColumn;

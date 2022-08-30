@@ -20,28 +20,9 @@
                     width: 12rem;
                 }
                 &__div{
-                    // margin: 19rem 0 0 94rem;
                     &__img{
                         width: 12rem;
                     }
-                    // &__contenido{
-                    //     margin-top: 15vh;
-                    //     .h1{
-                    //         font-size: 2.6rem;
-                    //     }
-
-                    //     .h2{
-                    //         font-size: 2.6rem;
-                    //     }
-
-                    //     .p{
-                    //         font-size: 1.8rem;
-                    //     }
-
-                    //     .btnDonar{
-                    //         font-size: 2rem;
-                    //     }
-                    // }
                 }
             }
         }
@@ -50,7 +31,6 @@
     //MAIN 1650px
 
     .divPrueba{
-        // margin-top: 15vh;
         .h1{
             font-size: 2.6rem;
         }
@@ -122,30 +102,6 @@
                     &__img{
                         width: 10rem;
                     }
-                    // &__contenido{
-                    //     margin-top: 10vh;
-                    //     .h1{
-                    //         font-size: 2.1rem;
-                    //         line-height: 40px;
-                    //     }
-
-                    //     .h2{
-                    //         font-size: 2.1rem;
-                    //         line-height: 40px;
-                    //     }
-
-                    //     .p{
-                    //         margin-top: 15px;
-                    //         font-size: 1.4rem;
-                    //         margin-bottom: 30px;
-                    //         max-width: 25rem;
-                    //     }
-
-                    //     .btnDonar{
-                    //         font-size: 1.6rem;
-                    //         align-self: flex-start;
-                    //     }
-                    // }
                 }
             }
         }
@@ -154,7 +110,6 @@
     //MAIN 1245px
 
     .divPrueba{
-        // margin-top: 10vh;
         .h1{
             font-size: 2.1rem;
             line-height: 40px;
@@ -174,8 +129,6 @@
 
         .btnDonar{
             font-size: 1.6rem;
-            // align-self: flex-start;
-            // margin-right: 50%;
         }
     }
 
@@ -202,9 +155,6 @@
             &__texto{
                 justify-content: center;
                 align-items: center;
-                // padding-left: 2rem;
-                // min-width: 30rem;
-                // text-align: center;
             }
         }
     }
@@ -262,9 +212,6 @@
             &__texto{
                 justify-content: center;
                 align-items: center;
-                // padding-left: 2rem;
-                // min-width: 30rem;
-                // text-align: center;
             }
         }
     }
@@ -364,27 +311,6 @@
                     &__img{
                         width: 7rem;
                     }
-                    // &__contenido{
-                    //     margin-top: 10vh;
-                    //     .h1{
-                    //         line-height: 40px;
-                    //     }
-
-                    //     .h2{
-                    //         line-height: 40px;
-                    //     }
-
-                    //     .p{
-                    //         margin-top: 15px;
-                    //         font-size: 1.4rem;
-                    //         margin-bottom: 30px;
-                    //     }
-
-                    //     .btnDonar{
-                    //         font-size: 1.6rem;
-                    //         align-self: flex-start;
-                    //     }
-                    // }
                 }
             }
         }
@@ -393,7 +319,6 @@
     //MAIN 890px
 
     .divPrueba{
-        // margin-top: 10vh;
         .h1{
             line-height: 40px;
         }
@@ -436,9 +361,6 @@
             &__texto{
                 justify-content: center;
                 align-items: center;
-                // padding-left: 2rem;
-                // min-width: 30rem;
-                // text-align: center;
             }
         }
     }
@@ -556,36 +478,12 @@
         &__divImagen{
             min-width: 12rem;
             .logoHeader{
-                // left: -99rem;
                 &__div{
-                    // margin: 19rem 0 0 101rem;
                     &__img{
                         background-color: white;
                         border-radius: 6px;
                         padding: 0.3rem;
                     }
-
-                    // &__contenido{
-                    //     .h1{
-                    //         font-size: 1.8rem;
-                    //         line-height: 33px;
-                    //     }
-
-                    //     .h2{
-                    //         font-size: 1.8rem;
-                    //         line-height: 33px;
-                    //     }
-
-                    //     .p{
-                    //         margin-top: 10px;
-                    //         font-size: 1rem;
-                    //         margin-bottom: 20px;
-                    //     }
-
-                    //     .btnDonar{
-                    //         font-size: 1.2rem;
-                    //     }
-                    // }
                 }
             }
         }
@@ -637,10 +535,6 @@
             &__texto{
                 justify-content: center;
                 align-items: center;
-                // padding-left: 2rem;
-                // min-width: 30rem;
-                // text-align: center;
-                
             }
         }
     }
@@ -783,10 +677,6 @@
         }
     }
 
-    // #check, .bar-btn{
-    //     display: inherit;
-    // }
-
     .bar-btn, .bar-btnDos{
         display: inherit;
         font-size: 2rem;
@@ -804,10 +694,6 @@
     .bar-btn i, .bar-btnDos i{
         transition: all 120ms;
     }
-
-    // .bar-btn i, .bar-btnDos i{
-        //     transition: all 120ms;
-    // }
 
     #check:checked ~ .header{
         z-index: 10;
@@ -847,7 +733,6 @@
         &__divImagen{
             .logoHeader{
                 background-color: transparent;
-                // display: none;
 
                 &__div{
                     &__img{
@@ -864,14 +749,9 @@
                 max-width: 0;
                 width: 0;
                 min-width: 0;
-                // min-width: 127.5rem;
                 max-height: 0;
                 height: 0;
                 min-height: 0;
-                // min-height: 680px;
-                // overflow-y: scroll;
-                // min-width: 120rem;
-                // height: 170vh;
                 top: -20rem;
                 left: -92rem;
                 border-radius: 50%;
@@ -933,7 +813,6 @@
             &__texto{
                 justify-content: center;
                 align-items: center;
-                // min-width: 30rem;
                 text-align: center;
             }
         }
@@ -977,7 +856,6 @@
     //CONTACTOS 710px
 
     .main__Contactos{
-        // min-height: 600px;
         .h1__Contactos{
             font-size: 35px;
             line-height: 38px;
@@ -1152,7 +1030,6 @@
         }
 
         &__divBtn{
-            // align-items: center;
             justify-content: space-between;
         }
 

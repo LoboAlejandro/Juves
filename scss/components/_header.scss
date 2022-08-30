@@ -20,14 +20,9 @@
             max-width: 140rem;
             width: 168vw;
             min-width: 122rem;
-            // min-width: 127.5rem;
             max-height: 175vh;
             height: 175vh;
             min-height: 60rem;
-            // min-height: 680px;
-            // overflow-y: scroll;
-            // min-width: 120rem;
-            // height: 170vh;
             top: -20rem;
             left: -92rem;
             border-radius: 50%;
@@ -49,64 +44,7 @@
                         cursor: pointer;
                     }
                 }
-                
-                // &__contenido{
-                //     margin-top: 35vh;
-                //     // min-width: 30vw;
-                //     // width: 40vw;
-                //     max-width: 50rem;
-                //     min-height: fit-content;
-                //     height: 50vh;
-                //     @extend %flexboxColumn;
-                //     align-items: flex-start;
-
-                //     .h1{
-                //         font-size: 3rem;
-                //         font-weight: 300;
-                //         color: $colorPrincipal;
-                //         line-height: 68px;
-                //         max-width: 40rem;
-                //     }
-
-                //     .h2{
-                //         font-size: 3rem;
-                //         font-weight: 700;
-                //         color: $colorPrincipal;
-                //         line-height: 50px;
-                //     }
-
-                //     .p{
-                //         margin-top: 30px;
-                //         font-size: 2.3rem;
-                //         font-weight: 400;
-                //         color: #000;
-                //         max-width: 45rem;
-                //         margin-bottom: 60px;
-                //     }
-
-                //     .btnDonar{
-                //         font-size: 2.5rem;
-                //         font-weight: 700;
-                //         text-decoration: none;
-                //         border-radius: 10px;
-                //         padding: 0.8rem 2.5rem;
-                //         border: none;
-                //         background-color: $colorPrincipal;
-                //         color: $colorSecundario;
-                //         align-self: center;
-
-                //         &:hover{
-                //             cursor: pointer;
-                //             background-color: $colorPrincipalClaro;
-                //         }
-
-                //         &__a{
-                //             color: $colorSecundario;
-                //         }
-                //     }
-                // }
             }
-            
         }
         
         .prueba{
@@ -149,13 +87,6 @@
             .carett{
                 color: white;
             }
-        
-
-
-            // .submenu__ul:hover{
-            //     display: block;
-            //     position: absolute;
-            // }
 
             .anchorContacto{
                 border: 2px solid $colorSecundario;
@@ -164,11 +95,6 @@
             }
         }
     }
-
-    // #check, .bar-btn{
-    //     display: none;
-    // }
-    
 }
 
 #check, .bar-btn{
@@ -177,16 +103,9 @@
 
 .divPrueba{
     position: absolute;
-    // margin-top: 13vh;
-    // margin-bottom: 11vh;
     margin: 15vh 0 11vh 1rem;
     width: 40%;
     height: 74vh;
-    // min-height: 680px;
-    // overflow-y: scroll;
-    // background-color: gray;
-    // z-index: 1;
-
 
     @extend %flexboxColumn;
     align-items: flex-start;
@@ -254,7 +173,6 @@
     z-index: 10;
 
     li{
-        // background-color: black;
         padding: 0.4rem 0.1rem;
         text-decoration: none;
         list-style-type: none;

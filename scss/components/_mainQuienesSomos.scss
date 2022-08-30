@@ -8,10 +8,8 @@
 
     .main__QS{ 
         @extend %flexboxRow;
-        // margin-top: 12rem;
         padding: 0 2rem 0 2rem;
         background-color: $colorPrincipal;
-        // padding-top: 1rem;
         color:$colorSecundario;
         justify-content: center;
         align-items: center;
@@ -40,9 +38,6 @@
             justify-content: center;
             align-items: center;
             align-self: flex-start;
-            // padding-left: 2rem;
-            // min-width: 30rem;
-            // text-align: center;
         }
     }
 }
